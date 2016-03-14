@@ -1,0 +1,1736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20286c25-fd08-44c1-b3cb-7dec742c6806" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/COPYING.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/about.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/config/config.inc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/docs/DVWA_v1.3.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/docs/pdf.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/css/help.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/css/source.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/images/RandomStorm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/images/dollar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/images/lock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/images/login_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/images/spanner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/images/warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/includes/DBMS/MySQL.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/includes/DBMS/PGSQL.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/includes/dvwaPage.inc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/includes/dvwaPhpIds.inc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/dvwa/js/dvwaPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/examples/cakephp/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/examples/cakephp/ids.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/examples/cakephp/intrusion.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/examples/example.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Caching.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Caching_Database.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Caching_File.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Caching_Interface.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Caching_Memcached.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Caching_Session.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Converter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Event.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Filter_Storage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Filter_Storage_Abstract.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Init.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Log_Composite.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Log_Database.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Log_Email.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Log_File.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Log_Interface.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Monitor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/IDS_Report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Caching---Database.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Caching---Factory.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Caching---File.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Caching---Interface.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Caching---Memcached.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Caching---Session.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Converter.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Event.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Filter---Filter.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Filter---Storage---Abstract.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Filter---Storage.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Filter.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Init.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Log---Composite.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Log---Database.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Log---Email.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Log---File.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Log---Interface.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Monitor.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/PHPIDS/_Report.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/blank.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/classtrees_PHPIDS.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/elementindex.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/elementindex_PHPIDS.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/errors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/li_PHPIDS.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/media/banner.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/media/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/docs/phpdocumentor/packages.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Caching/Database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Caching/Factory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Caching/File.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Caching/Interface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Caching/Memcached.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Caching/Session.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Config/Config.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Converter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Event.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Filter/Storage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Init.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Log/Composite.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Log/Database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Log/Email.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Log/File.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Log/Interface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Monitor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/Report.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/default_filter.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/default_filter.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/tmp/phpids_log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier.auto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier.autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier.func.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier.includes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier.kses.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier.path.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier.safe-includes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrCollections.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/AlphaValue.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/Background.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/BackgroundPosition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/Border.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/Color.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/Composite.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/DenyElementDecorator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/Filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/Font.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/FontFamily.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/ImportantDecorator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/Length.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/ListStyle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/Multiple.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/Number.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/Percentage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/TextDecoration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/CSS/URI.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/Enum.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/HTML/Bool.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/HTML/Color.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/HTML/FrameTarget.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/HTML/ID.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/HTML/Length.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/HTML/LinkTypes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/HTML/MultiLength.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/HTML/Nmtokens.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/HTML/Pixels.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/Integer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/Lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/Switch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/Text.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/URI.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/URI/Email.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/URI/Email/SimpleCheck.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/URI/Host.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/URI/IPv4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrDef/URI/IPv6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/Background.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/BdoDir.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/BgColor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/BoolToCSS.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/Border.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/EnumToCSS.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/ImgRequired.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/ImgSpace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/Input.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/Lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/Length.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/Name.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/SafeEmbed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/SafeObject.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/SafeParam.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/ScriptRequired.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTransform/Textarea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrTypes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/AttrValidator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/CSSDefinition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ChildDef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ChildDef/Chameleon.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ChildDef/Custom.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ChildDef/Empty.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ChildDef/Optional.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ChildDef/Required.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ChildDef/StrictBlockquote.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ChildDef/Table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigDef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigDef/Directive.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigDef/DirectiveAlias.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigDef/Namespace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/Builder/ConfigSchema.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/Builder/Xml.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/Interchange.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/Interchange/Directive.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/Interchange/Id.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/Interchange/Namespace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/InterchangeBuilder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/Validator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/ValidatorAtom.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.AllowedFrameTargets.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.AllowedRel.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.AllowedRev.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.DefaultImageAlt.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.DefaultInvalidImage.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.DefaultInvalidImageAlt.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.DefaultTextDir.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.EnableID.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.IDBlacklist.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.IDBlacklistRegexp.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.IDPrefix.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.IDPrefixLocal.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/AutoFormat.AutoParagraph.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/AutoFormat.Custom.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/AutoFormat.DisplayLinkURI.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/AutoFormat.Linkify.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/AutoFormat.PurifierLinkify.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/AutoFormat.RemoveEmpty.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/AutoFormat.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/AutoFormatParam.PurifierLinkifyDocURL.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/AutoFormatParam.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/CSS.AllowImportant.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/CSS.AllowTricky.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/CSS.AllowedProperties.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/CSS.DefinitionRev.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/CSS.MaxImgLength.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/CSS.Proprietary.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/CSS.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Cache.DefinitionImpl.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Cache.SerializerPath.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Cache.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.AggressivelyFixLt.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.CollectErrors.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.ColorKeywords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.ConvertDocumentToFragment.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.DirectLexLineNumberSyncInterval.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.Encoding.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.EscapeInvalidChildren.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.EscapeInvalidTags.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.EscapeNonASCIICharacters.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.HiddenElements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.Language.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.LexerImpl.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.MaintainLineNumbers.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.RemoveInvalidImg.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.RemoveScriptContents.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Core.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Filter.Custom.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Filter.ExtractStyleBlocks.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Filter.YouTube.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Filter.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/FilterParam.ExtractStyleBlocksEscaping.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/FilterParam.ExtractStyleBlocksScope.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/FilterParam.ExtractStyleBlocksTidyImpl.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/FilterParam.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.Allowed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.AllowedAttributes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.AllowedElements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.AllowedModules.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.BlockWrapper.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.CoreModules.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.CustomDoctype.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.DefinitionID.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.DefinitionRev.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.Doctype.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.ForbiddenAttributes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.ForbiddenElements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.MaxImgLength.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.Parent.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.Proprietary.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.SafeEmbed.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.SafeObject.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.Strict.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.TidyAdd.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.TidyLevel.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.TidyRemove.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.Trusted.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.XHTML.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/HTML.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Output.CommentScriptContents.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Output.Newline.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Output.SortAttr.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Output.TidyFormat.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Output.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Test.ForceNoIconv.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.AllowedSchemes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.Base.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.DefaultScheme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.DefinitionID.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.DefinitionRev.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.Disable.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.DisableExternal.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.DisableExternalResources.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.DisableResources.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.Host.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.HostBlacklist.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.MakeAbsolute.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.Munge.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.MungeResources.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.MungeSecretKey.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.OverrideAllowedSchemes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/URI.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/info.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ContentSets.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Context.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Definition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/DefinitionCache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/DefinitionCache/Decorator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/DefinitionCache/Decorator/Cleanup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/DefinitionCache/Decorator/Memory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/DefinitionCache/Decorator/Template.php.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/DefinitionCache/Null.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/DefinitionCache/Serializer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/DefinitionCache/Serializer/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/DefinitionCacheFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Doctype.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/DoctypeRegistry.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ElementDef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Encoder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/EntityLookup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/EntityLookup/entities.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/EntityParser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ErrorCollector.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ErrorStruct.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Filter/ExtractStyleBlocks.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Filter/YouTube.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Generator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLDefinition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Bdo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/CommonAttributes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Edit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Forms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Hypertext.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Legacy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/List.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Name.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/NonXMLCommonAttributes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Object.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Presentation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Proprietary.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Ruby.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/SafeEmbed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/SafeObject.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Scripting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/StyleAttribute.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Tables.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Target.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Text.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Tidy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Tidy/Name.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Tidy/Proprietary.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Tidy/Strict.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Tidy/Transitional.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Tidy/XHTML.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/Tidy/XHTMLAndHTML4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModule/XMLCommonAttributes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/HTMLModuleManager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/IDAccumulator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Injector.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Injector/AutoParagraph.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Injector/DisplayLinkURI.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Injector/Linkify.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Injector/PurifierLinkify.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Injector/RemoveEmpty.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Injector/SafeObject.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Language.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Language/classes/en-x-test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Language/messages/en-x-test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Language/messages/en-x-testmini.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Language/messages/en.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/LanguageFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Length.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Lexer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Lexer/DOMLex.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Lexer/DirectLex.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Lexer/PEARSax3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Lexer/PH5P.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/PercentEncoder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Printer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Printer/CSSDefinition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Printer/ConfigForm.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Printer/ConfigForm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Printer/ConfigForm.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Printer/HTMLDefinition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Strategy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Strategy/Composite.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Strategy/Core.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Strategy/FixNesting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Strategy/MakeWellFormed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Strategy/RemoveForeignElements.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Strategy/ValidateAttributes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/StringHash.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/StringHashParser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/TagTransform.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/TagTransform/Font.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/TagTransform/Simple.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Token.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Token/Comment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Token/Empty.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Token/End.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Token/Start.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Token/Tag.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/Token/Text.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/TokenFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URI.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIDefinition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIFilter/DisableExternal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIFilter/DisableExternalResources.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIFilter/HostBlacklist.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIFilter/MakeAbsolute.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIFilter/Munge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIParser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIScheme.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIScheme/ftp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIScheme/http.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIScheme/https.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIScheme/mailto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIScheme/news.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URIScheme/nntp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/URISchemeRegistry.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/UnitConverter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/VarParser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/VarParser/Flexible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/VarParser/Native.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/lib/IDS/vendors/htmlpurifier/HTMLPurifier/VarParserException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/IDS/CachingTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/IDS/EventTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/IDS/ExceptionTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/IDS/FilterTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/IDS/InitTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/IDS/MonitorTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/IDS/ReportTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/allTests.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Caching.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Caching_Factory.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Caching_File.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Caching_Interface.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Caching_Session.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Converter.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Event.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Filter.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Filter_Storage.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Init.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Monitor.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/Report.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/butter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/chameleon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/close12_1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/container-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/container.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/glass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/scarlet_red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/snow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/phpids/0.6/tests/coverage/yahoo-dom-event.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/external/recaptcha/recaptchalib.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/hackable/flags/fi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/hackable/uploads/dvwa_email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/hackable/users/1337.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/hackable/users/admin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/hackable/users/gordonb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/hackable/users/pablo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/hackable/users/smithy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/ids_log.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/instructions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/login.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/logout.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/php.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/phpinfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/security.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/setup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/brute/help/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/brute/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/brute/source/high.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/brute/source/impossible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/brute/source/low.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/brute/source/medium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/captcha/help/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/captcha/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/captcha/source/high.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/captcha/source/impossible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/captcha/source/low.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/captcha/source/medium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/csrf/help/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/csrf/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/csrf/source/high.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/csrf/source/impossible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/csrf/source/low.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/csrf/source/medium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/exec/help/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/exec/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/exec/source/high.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/exec/source/impossible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/exec/source/low.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/exec/source/medium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/file1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/file2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/file3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/file4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/help/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/source/high.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/source/impossible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/source/low.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/fi/source/medium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli/help/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli/session-input.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli/source/high.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli/source/impossible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli/source/low.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli/source/medium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli_blind/cookie-input.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli_blind/help/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli_blind/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli_blind/source/high.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli_blind/source/impossible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli_blind/source/low.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/sqli_blind/source/medium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/upload/help/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/upload/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/upload/source/high.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/upload/source/impossible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/upload/source/low.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/upload/source/medium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/view_help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/view_source.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/view_source_all.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_r/help/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_r/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_r/source/high.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_r/source/impossible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_r/source/low.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_r/source/medium.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_s/help/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_s/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_s/source/high.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_s/source/impossible.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_s/source/low.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dvwa/vulnerabilities/xss_s/source/medium.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../blob_project" afterPath="$PROJECT_DIR$/../blob_project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../codebuttons" afterPath="$PROJECT_DIR$/../codebuttons" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../hint2flow" afterPath="$PROJECT_DIR$/../hint2flow" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/blog" afterPath="$PROJECT_DIR$/../meteor/blog" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/meteorjs-git" afterPath="$PROJECT_DIR$/../meteor/meteorjs-git" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../velibis" afterPath="$PROJECT_DIR$/../velibis" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../velibis-kurumsal" afterPath="$PROJECT_DIR$/../velibis-kurumsal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wiki" afterPath="$PROJECT_DIR$/../wiki" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../fos/src/Test/LoginBundle/Entity/User.php" afterPath="$PROJECT_DIR$/../fos/src/Test/LoginBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/.idea/meteor.iml" afterPath="$PROJECT_DIR$/../meteor/.idea/meteor.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../meteor/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/f7-inline/Pages/about.html" afterPath="$PROJECT_DIR$/../meteor/f7-inline/Pages/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/f7-inline/Pages/anasayfa.html" afterPath="$PROJECT_DIR$/../meteor/f7-inline/Pages/anasayfa.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/f7-inline/Pages/main.html" afterPath="$PROJECT_DIR$/../meteor/f7-inline/Pages/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/meteorproject/meteorproject.html" afterPath="$PROJECT_DIR$/../meteor/meteorproject/meteorproject.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../meteor/test/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" afterPath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Resources/views/Main/test.html.twig" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Resources/views/Main/test.html.twig" />
+    </list>
+    <ignored path="wivet.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="wivet" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MainController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8561644">
+              <caret line="43" column="123" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="123" />
+              <folding>
+                <element signature="e#48#105#0#PHP" expanded="true" />
+                <element signature="e#2770#2808#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Resources/views/Main/test.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.875">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/var/cache/dev/profiler/index.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.875">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+              <folding>
+                <element signature="e#599#624#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Resources/views/Main/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Profiler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/Profiler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="158" column="7" selection-start-line="158" selection-start-column="7" selection-end-line="158" selection-end-column="7" />
+              <folding>
+                <element signature="e#288#333#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LateDataCollectorInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/LateDataCollectorInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventDataCollector.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/EventDataCollector.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataCollectorInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/DataCollectorInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfilerStorageInterface.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/ProfilerStorageInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/web/assets/js/jquery.js" />
+        <option value="$PROJECT_DIR$/web/assets/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/web/assets/font-awesome/css/animation.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Gadgets/navbar.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/Profile.php" />
+        <option value="$PROJECT_DIR$/var/logs/dev.log" />
+        <option value="$PROJECT_DIR$/web/app_dev.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/Profiler.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/FileProfilerStorage.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/ProfilerStorageInterface.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/results.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Controller/ProfilerController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Core/CommonBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Core/CommonBundle/Resources/views/Main/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" />
+        <option value="$PROJECT_DIR$/src/Core/CommonBundle/Resources/views/Main/test.html.twig" />
+        <option value="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bundles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sessions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CommonBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CommonBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CommonBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CommonBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="configurable.group.appearance" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wivet-master" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Applications/MAMP/htdocs/wivet/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/Profiler.php&#10;FilePP&#9;FILE&#9;file:///Applications/MAMP/htdocs/wivet/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/FileProfilerStorage.php&#10;Profiler&#9;null&#9;null&#10;profl&#9;null&#9;null" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/assets/font-awesome" />
+      <recent name="$PROJECT_DIR$/web/assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.prod">
+    <configuration default="false" name="prod" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/var/cache/prod" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.prod" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.prod" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20286c25-fd08-44c1-b3cb-7dec742c6806" name="Default" comment="" />
+      <created>1457291591008</created>
+      <option name="number" value="Default" />
+      <updated>1457291591008</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27786753" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27786753" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/LateDataCollectorInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/EventDataCollector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/DataCollectorInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/ProfilerStorageInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Descriptor/JsonDescriptor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0821917">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Descriptor/Descriptor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.69863">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Command/ServerStartCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5273972">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Command/ServerCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3287672">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/NodeVisitor/TranslationDefaultDomainNodeVisitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6780822">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/NodeVisitor/Scope.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2465754">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Extension/ExpressionExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5753425">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Extension/SecurityExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.30136988">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Extension/StopwatchExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Gadgets/navbar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/StreamedResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49318182">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.862745">
+          <caret line="113" column="78" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Extension/ProfilerExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/ProfilerListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="55.5">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="22.5">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="73.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/NodeVisitor/Profiler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="26.125">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Node/EnterProfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.125">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Profiler/Dumper/Blackfire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3767123">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="550.625">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle/DataCollector/MessageDataCollector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="67.375">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8181819">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3761062">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Controller/ProfilerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.25">
+          <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/font-awesome/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/font-awesome/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.163717">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/font-awesome/css/animation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1681416">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Profiler/TemplateManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.375">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/FileProfilerStorage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.75">
+          <caret line="270" column="29" selection-start-line="270" selection-start-column="29" selection-end-line="270" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/results.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="128" selection-start-line="63" selection-start-column="128" selection-end-line="63" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1460177">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/Profiler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="158" column="7" selection-start-line="158" selection-start-column="7" selection-end-line="158" selection-end-column="7" />
+          <folding>
+            <element signature="e#288#333#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/LateDataCollectorInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/EventDataCollector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/DataCollector/DataCollectorInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/ProfilerStorageInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Resources/views/Main/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.875">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding>
+            <element signature="e#599#624#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Resources/views/Main/test.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/profiler/index.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8561644">
+          <caret line="43" column="123" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="123" />
+          <folding>
+            <element signature="e#48#105#0#PHP" expanded="true" />
+            <element signature="e#2770#2808#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

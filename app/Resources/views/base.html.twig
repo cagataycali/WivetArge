@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Wivet{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/font-awesome/css/font-awesome.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/font-awesome/css/animation.css') }}">
+        <style>
+
+        </style>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+
+        {% include ':Gadgets:navbar.html.twig' %}
+
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+
+        <script src="{{ asset('assets/js/jquery.js') }}"></script>
+        <script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+    </body>
+</html>

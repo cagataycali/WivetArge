@@ -1,0 +1,7 @@
+core_common_homepage:
+    path:     /
+    defaults: { _controller: CoreCommonBundle:Main:index }
+
+core_common_test:
+    path:     /{token}/test
+    defaults: { _controller: CoreCommonBundle:Main:test }
