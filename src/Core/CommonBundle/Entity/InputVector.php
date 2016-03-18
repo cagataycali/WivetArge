@@ -54,6 +54,21 @@ class InputVector
     }
 
 
+
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return InputVector
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
     /**
      * Get id
      *

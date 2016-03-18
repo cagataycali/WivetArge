@@ -23,6 +23,13 @@ class TestCaseMethod
     private $id;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255)
+     */
+    private $name;
+
+    /**
      * @ORM\OneToMany(targetEntity="TestCase", mappedBy="method")
      */
     private $test_cases;
@@ -33,6 +40,19 @@ class TestCaseMethod
     }
 
 
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return TestCaseMethod
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
 
     /**
      * Get id
@@ -42,6 +62,30 @@ class TestCaseMethod
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     *
+     * @return TestCaseMethod
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
     }
 
     /**

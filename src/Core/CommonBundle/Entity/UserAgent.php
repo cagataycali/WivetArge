@@ -32,6 +32,21 @@ class UserAgent
         $this->records = new ArrayCollection();
     }
 
+
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return UserAgent
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
     /**
      * Get id
      *

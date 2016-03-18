@@ -47,7 +47,19 @@ class TestCase
 
 
 
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return TestCase
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
 
+        return $this;
+    }
 
     /**
      * Get id

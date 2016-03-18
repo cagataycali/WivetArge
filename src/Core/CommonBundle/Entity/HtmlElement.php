@@ -15,9 +15,8 @@ class HtmlElement
 {
     /**
      * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
      * @ORM\Id
+     * @ORM\Column(name="id", type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
@@ -46,6 +45,21 @@ class HtmlElement
         $this->input_vectors = new ArrayCollection();
     }
 
+
+
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return HtmlElement
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
 
     /**
      * Get id

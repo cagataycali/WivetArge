@@ -60,7 +60,19 @@ class Record
         $this->test_cases = new ArrayCollection();
     }
 
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return Record
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
 
+        return $this;
+    }
 
     /**
      * Get id
