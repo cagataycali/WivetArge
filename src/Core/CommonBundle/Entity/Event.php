@@ -30,11 +30,18 @@ class Event
     private $name;
 
     /**
+     * @var int
+     *
+     * @ORM\Column(name="weight", type="integer")
+     */
+    private $weight;
+
+    /**
      * @var string
      *
-     * @ORM\Column(name="referance", type="string", length=255)
+     * @ORM\Column(name="reference", type="string", length=255)
      */
-    private $referance;
+    private $reference;
 
     /**
      * @ORM\OneToMany(targetEntity="InputVector", mappedBy="event")
@@ -45,7 +52,6 @@ class Event
     {
         $this->input_vectors = new ArrayCollection();
     }
-
 
     /**
      * Get id
@@ -82,27 +88,51 @@ class Event
     }
 
     /**
-     * Set referance
+     * Set weight
      *
-     * @param string $referance
+     * @param integer $weight
      *
      * @return Event
      */
-    public function setReferance($referance)
+    public function setWeight($weight)
     {
-        $this->referance = $referance;
+        $this->weight = $weight;
 
         return $this;
     }
 
     /**
-     * Get referance
+     * Get weight
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return $this->weight;
+    }
+
+    /**
+     * Set reference
+     *
+     * @param string $reference
+     *
+     * @return Event
+     */
+    public function setReference($reference)
+    {
+        $this->reference = $reference;
+
+        return $this;
+    }
+
+    /**
+     * Get reference
      *
      * @return string
      */
-    public function getReferance()
+    public function getReference()
     {
-        return $this->referance;
+        return $this->reference;
     }
 
     /**
