@@ -160,23 +160,23 @@ class MainController extends Controller
                             $em->persist($test_case_method_obj);
 
 
-                            # Test case description's
-                            #todo : burada foreach dönmemeli sanırım biraz düşün!
-                            foreach ($test_case_descriptions as $description_key => $test_case_description) {
-
-                                # Test case description obj
-                                $test_case_description_obj = new TestCaseDescription();
-                                $test_case_description_obj -> setId($description_key); # OBJ ID
-                                $test_case_description_obj -> setContent($test_case_description);
-
-                                $em->persist($test_case_description_obj);
+//                            # Test case description's
+//                            #todo : burada foreach dönmemeli sanırım biraz düşün!
+//                            foreach ($test_case_descriptions as $description_key => $test_case_description) {
+//
+//                                # Test case description obj
+//                                $test_case_description_obj = new TestCaseDescription();
+//                                $test_case_description_obj -> setId($description_key); # OBJ ID
+//                                $test_case_description_obj -> setContent($test_case_description);
+//
+//                                $em->persist($test_case_description_obj);
 
 
                                 #Test case id:
 
                                 $test_case = new TestCase();
                                 $test_case -> setId($test_case_id);
-                                $test_case -> setTestCaseDescription($test_case_description_obj);
+                                //$test_case -> setTestCaseDescription($test_case_description_obj);
                                 $test_case -> setInputVector($test_case_input_vector_obj);
                                 $test_case -> setMethod($test_case_method_obj);
                                 $test_case -> setRecord($record_obj);
@@ -190,7 +190,7 @@ class MainController extends Controller
                                 #Test case id ++
                                 $test_case_id++;
 
-                            } # Test case descriptions end
+                            //} # Test case descriptions end
 
                         } # Test case methods && Test case end
 
