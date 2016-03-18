@@ -16,8 +16,6 @@ class TestCase
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
@@ -47,7 +45,19 @@ class TestCase
 
 
 
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return TestCase
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
 
+        return $this;
+    }
 
     /**
      * Get id

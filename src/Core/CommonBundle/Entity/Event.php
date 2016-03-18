@@ -17,8 +17,6 @@ class Event
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
@@ -51,6 +49,21 @@ class Event
     public function __construct()
     {
         $this->input_vectors = new ArrayCollection();
+    }
+
+
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return Event
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
     }
 
     /**

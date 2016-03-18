@@ -3,7 +3,13 @@
 namespace Core\CommonBundle\Controller;
 
 use Core\CommonBundle\Entity\Event;
+use Core\CommonBundle\Entity\HtmlElement;
 use Core\CommonBundle\Entity\Record;
+use Core\CommonBundle\Entity\TestCase;
+use Core\CommonBundle\Entity\TestCaseDescription;
+use Core\CommonBundle\Entity\TestCaseMethod;
+use Core\CommonBundle\Entity\VectorCategory;
+use Core\CommonBundle\Entity\InputVector;
 use Doctrine\ORM\EntityManager;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -15,12 +21,14 @@ class MainController extends Controller
 {
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
 
+
     /**
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction(Request $request)
     {
+
 
         #Doctrine
         $em = $this->getDoctrine()->getManager();
@@ -30,6 +38,140 @@ class MainController extends Controller
 
         # Session
         $session = $request->getSession();
+
+        $record = $session->get('record');
+
+//        $record->setIpAddress($client_ip);
+
+        $record_obj = new Record();
+
+        $record_obj -> setId(1);
+        $record_obj -> setIpAddress(1);
+        $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
+        $record_obj -> setRecordKey(123);
+        $record_obj -> setUserAgent(21);
+
+        # Record doesn't exist!
+        if(!$record)
+        {
+            # Call All arrays and work dude work!
+            $test_case_descriptions = [
+                'self referencing link',
+                'link href js protocol',
+                'div onmouseover window.open',
+                'html_element event',
+            ];
+
+            $test_case_methods = [
+                 'GET',
+                 'POST'
+            ];
+
+            $test_case_html_elements = [
+                'li',
+                'span',
+                'a',
+                'br',
+                'div',
+                'ul',
+                'li',
+                'h1',
+                'h2',
+                'h3',
+                'h4',
+                'h5',
+                'h6',
+                'small',
+                'i',
+                'b'
+            ];
+
+            $test_case_vector_categorys = [
+
+                'hardcoded',
+                'newGeneration'
+
+            ];
+
+            $test_case_events = [
+                'onclick',
+                'onhover',
+                'onkeypress',
+                'onkeyup',
+                'onscrollup',
+                'onscrolldown',
+                'onscroll'
+            ];
+
+            # Test case vector's
+            foreach ($test_case_vector_categorys as $vector_category_key => $test_case_vector_category) {
+
+                $test_case_vector_category_obj = new VectorCategory();
+                $test_case_vector_category_obj ->setId($vector_category_key);
+                $test_case_vector_category_obj ->setName($test_case_vector_category);
+
+                # Test case html element's
+                foreach ($test_case_html_elements  as $html_element_key => $test_case_html_element) {
+
+                    $test_case_html_element_obj = new HtmlElement();
+                    $test_case_html_element_obj ->setId($html_element_key);
+                    $test_case_html_element_obj ->setName($test_case_html_element);
+
+                    # Test case event's
+                    foreach ($test_case_events as $event_key =>  $test_case_event) {
+
+                        $test_case_event_obj = new Event();
+                        $test_case_event_obj ->setId($event_key);
+                        $test_case_event_obj ->setName($test_case_event);
+
+
+                        $test_case_input_vector_obj = new InputVector();
+                        $test_case_input_vector_obj ->setId($html_element_key);
+                        $test_case_input_vector_obj ->setEvent($test_case_event_obj);
+                        $test_case_input_vector_obj ->setHtmlElement($test_case_html_element_obj);
+                        $test_case_input_vector_obj ->setVectorCategory($test_case_vector_category_obj);
+
+                        # Test case method's
+                        foreach ($test_case_methods as $method_key => $test_case_method) {
+
+                            # Test case request method obj
+                            $test_case_method_obj = new TestCaseMethod();
+                            $test_case_method_obj ->setId($method_key);
+                            $test_case_method_obj ->setName($test_case_method);
+
+                            # Test case description's
+                            foreach ($test_case_descriptions as $description_key => $test_case_description) {
+
+                                # Test case description obj
+                                $test_case_description_obj = new TestCaseDescription();
+                                $test_case_description_obj -> setId($description_key); # OBJ ID
+                                $test_case_description_obj -> setContent($test_case_description);
+
+
+
+                                $test_case = new TestCase();
+                                $test_case -> setTestCaseDescription($test_case_description_obj);
+                                $test_case -> setInputVector($test_case_input_vector_obj);
+                                $test_case -> setMethod($test_case_method);
+                                $test_case -> setRecord(1);
+
+                                //echo $description_key . $test_case_description;
+
+                            } # Test case descriptions end
+
+                        } # Test case methods && Test case end
+
+                    }
+
+                }
+
+            }
+
+
+        } # Endif
+
+        exit;
+
 
         # Client Ip
         $client_ip = $request->getClientIp();
@@ -42,21 +184,21 @@ class MainController extends Controller
         $record->setIpAddress($client_ip);
 
         # Let's set record object to session
-        $session->set('record',$record);
+        //$session->set('record',$record);
 
-
-        echo "<pre>";
-        var_dump($session->get('record')); # See result
-        echo "</pre>";
-
-        # Attach record object from session to variable record!
-        $record = $session->get('record');
-
-        # Then record variable merge Record object!
-        $record = $em->merge($record);
-
-        # Result!
-        echo $record->getIpAddress();
+//
+//        echo "<pre>";
+//        var_dump($session->get('record')); # See result
+//        echo "</pre>";
+//
+//        # Attach record object from session to variable record!
+//        $record = $session->get('record');
+//
+//        # Then record variable merge Record object!
+//        $record = $em->merge($record);
+//
+//        # Result!
+//        echo $record->getIpAddress();
 
         # Return
         return $this->render('CoreCommonBundle:Main:index.html.twig');

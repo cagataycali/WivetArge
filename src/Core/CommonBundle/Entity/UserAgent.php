@@ -17,8 +17,6 @@ class UserAgent
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
@@ -30,6 +28,21 @@ class UserAgent
     public function __construct()
     {
         $this->records = new ArrayCollection();
+    }
+
+
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return UserAgent
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
     }
 
     /**
