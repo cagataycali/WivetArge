@@ -3,16 +3,16 @@ Wivet - Web Application's Crawler Benchmark Testing Tool 4U!
 
 # Easy 4 step!
 
-# Step 1;
+Step 1;
 --------
 Install symfony !
 http://symfony.com/download
 
-# Step 2;
+Step 2;
 --------
 git pull origin https://github.com/ccali14/WivetArge.git 
 
-# Step 3;
+Step 3;
 --------
 cd /path/your/localhost/dir
 mv app/config/parameters.yml.dist app/config/parameters.yml && vi app/config/parameters.yml 
@@ -22,13 +22,13 @@ mv app/config/parameters.yml.dist app/config/parameters.yml && vi app/config/par
 ## In Terminal:
 php bin/console do:db:cr && php bin/console do:sc:up -f
 
-# Step 4;
+Step 4;
 --------
 ## In Terminal:
 php composer.phar update
 
 
-# Conclusion
+Conclusion
 --------
 
 All done!
