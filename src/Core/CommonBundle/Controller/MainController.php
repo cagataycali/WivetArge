@@ -47,9 +47,10 @@ class MainController extends Controller
 
         $record_obj = new Record();
 
-        $record_obj -> setId($session->get('PHPSESSID'));
         $record_obj -> setIpAddress($client_ip);
         $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
+
+        $em->persist($record_obj);
 
 
         /**
@@ -116,12 +117,17 @@ class MainController extends Controller
                 $test_case_vector_category_obj ->setId($vector_category_key);
                 $test_case_vector_category_obj ->setName($test_case_vector_category);
 
+                $em->persist($test_case_vector_category_obj);
+
                 # Test case html element's
                 foreach ($test_case_html_elements  as $html_element_key => $test_case_html_element) {
 
                     $test_case_html_element_obj = new HtmlElement();
                     $test_case_html_element_obj ->setId($html_element_key);
                     $test_case_html_element_obj ->setName($test_case_html_element);
+
+                    $em->persist($test_case_html_element_obj);
+
 
                     # Test case event's
                     foreach ($test_case_events as $event_key =>  $test_case_event) {
@@ -130,12 +136,18 @@ class MainController extends Controller
                         $test_case_event_obj ->setId($event_key);
                         $test_case_event_obj ->setName($test_case_event);
 
+                        $em->persist($test_case_event_obj);
+
+
 
                         $test_case_input_vector_obj = new InputVector();
                         $test_case_input_vector_obj ->setId($html_element_key);
                         $test_case_input_vector_obj ->setEvent($test_case_event_obj);
                         $test_case_input_vector_obj ->setHtmlElement($test_case_html_element_obj);
                         $test_case_input_vector_obj ->setVectorCategory($test_case_vector_category_obj);
+
+                        $em->persist($test_case_input_vector_obj);
+
 
                         # Test case method's
                         foreach ($test_case_methods as $method_key => $test_case_method) {
@@ -145,13 +157,20 @@ class MainController extends Controller
                             $test_case_method_obj ->setId($method_key);
                             $test_case_method_obj ->setName($test_case_method);
 
+                            $em->persist($test_case_method_obj);
+
+
                             # Test case description's
+                            #todo : burada foreach dönmemeli sanırım biraz düşün!
                             foreach ($test_case_descriptions as $description_key => $test_case_description) {
 
                                 # Test case description obj
                                 $test_case_description_obj = new TestCaseDescription();
                                 $test_case_description_obj -> setId($description_key); # OBJ ID
                                 $test_case_description_obj -> setContent($test_case_description);
+
+                                $em->persist($test_case_description_obj);
+
 
                                 #Test case id:
 
@@ -162,8 +181,11 @@ class MainController extends Controller
                                 $test_case -> setMethod($test_case_method_obj);
                                 $test_case -> setRecord($record_obj);
 
-                                $session->set('record',$record);
+                                $session->set('record',$record_obj);
                                 $session->set('test_case_'.$test_case_id,$test_case);
+
+                                $em->persist($test_case);
+
 
                                 #Test case id ++
                                 $test_case_id++;
@@ -179,10 +201,50 @@ class MainController extends Controller
             }
 
 
+            echo $test_case_id;
+
+            # Attach record object from session to variable record!
+            $record_session_obj = $session->get('record');
+
+            # Then record variable merge Record object!
+            $record_session_obj = $em->merge($record_session_obj);
+
+            echo $record_session_obj->getIpAddress()."<br>";
+
+            echo count($record_session_obj->getTestCases());
+
+
+            /**
+             * Kiddie for!
+             */
+            for ( $i = 0;$i <= $test_case_id; $i++ )
+            {
+
+                $test_case_obj_session = $session->get('test_case_'.$i);
+
+                $test_case_obj_session = $em->merge($test_case_obj_session);
+
+                //$test_case_obj_session = new TestCase();
+                echo $test_case_obj_session->getMethod()->getName();
+                echo " ";
+                echo $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
+                echo " ";
+
+                echo $test_case_obj_session->getInputVector()->getEvent()->getName();
+                echo " ";
+
+                echo $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
+                echo "<br><hr>";
+
+
+            }
+
+            exit;
+
         } # Endif
 
-        exit;
-
+echo "Girmedi";
+exit;
 
         # Client Ip
         $client_ip = $request->getClientIp();
