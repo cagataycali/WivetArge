@@ -2,7 +2,11 @@
 
 namespace Core\CommonBundle\Controller;
 
+use Core\CommonBundle\Entity\Event;
+use Core\CommonBundle\Entity\Record;
+use Doctrine\ORM\EntityManager;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Session;
 
@@ -10,38 +14,55 @@ use Symfony\Component\HttpFoundation\Session\Session;
 class MainController extends Controller
 {
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
+
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function indexAction(Request $request)
     {
 
-        $session_id = $request->cookies->get('PHPSESSID');
+        #Doctrine
+        $em = $this->getDoctrine()->getManager();
 
-        $request_uri = $request->getUri();
+        #Cookie
+        $cookie = $request->cookies;
+
+        # Session
+        $session = $request->getSession();
+
+        # Client Ip
         $client_ip = $request->getClientIp();
-        $method = $request->getMethod();
+
+        # Create new Record object!
+        $record = new Record();
+
+        # Set params 4 object!
+        $record->setPhpSessionId($session->get('PHPSESSID'));
+        $record->setIpAddress($client_ip);
+
+        # Let's set record object to session
+        $session->set('record',$record);
 
 
-        /**
-         * Eureka!
-         *
-         * Benim session id değerim ile otomatik generate olmuş ve istek yapmış son 10 adet request'i görmektesiniz..
-         *
-         */
-//        echo "<pre>";
-//        print_r($this->container->get('profiler')->find($client_ip, $request_uri, 10, $method, '','',$session_id));
-//        echo "</pre>";
-//
-//
-        $data = $this->container->get('profiler')->find('','', 10, '', '','',$session_id);
-//
-//        echo "<pre>";
-//        print_r($data);
-//        echo "</pre>";
-//
-//
-//        echo count($data);
-//
+        echo "<pre>";
+        var_dump($session->get('record')); # See result
+        echo "</pre>";
 
-        return $this->render('CoreCommonBundle:Main:index.html.twig',array('session'=>$session_id,'data'=>$data[0]["token"]));
+        # Attach record object from session to variable record!
+        $record = $session->get('record');
+
+        # Then record variable merge Record object!
+        $record = $em->merge($record);
+
+        # Result!
+        echo $record->getIpAddress();
+
+        # Return
+        return $this->render('CoreCommonBundle:Main:index.html.twig');
+
+//              $data = $this->container->get('profiler')->find('','', 10, '', '','',$session_id);
+//        return $this->render('CoreCommonBundle:Main:index.html.twig',array('session'=>$session_id,'data'=>$data[0]["token"]));
     }
 
     public function testAction(Request $request,$token)
@@ -104,7 +125,8 @@ class MainController extends Controller
             echo "Token farklı";
         }
 
-
+        //todo : list of inputs vectors..
+        //return new JsonResponse($yanit);
         return $this->render('CoreCommonBundle:Main:test.html.twig');
 
     }
