@@ -50,8 +50,6 @@ class MainController extends Controller
         $record_obj -> setId($session->get('PHPSESSID'));
         $record_obj -> setIpAddress($client_ip);
         $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
-        $record_obj -> setRecordKey(123);
-        $record_obj -> setUserAgent(21);
 
 
         /**
@@ -161,7 +159,7 @@ class MainController extends Controller
                                 $test_case -> setId($test_case_id);
                                 $test_case -> setTestCaseDescription($test_case_description_obj);
                                 $test_case -> setInputVector($test_case_input_vector_obj);
-                                $test_case -> setMethod($test_case_method);
+                                $test_case -> setMethod($test_case_method_obj);
                                 $test_case -> setRecord($record_obj);
 
                                 $session->set('record',$record);
