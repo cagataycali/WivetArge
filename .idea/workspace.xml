@@ -783,17 +783,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" afterPath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/Event.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/Event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/HtmlElement.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/HtmlElement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/InputVector.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/InputVector.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCase.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCaseDescription.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCaseDescription.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCaseMethod.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCaseMethod.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/UserAgent.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/UserAgent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/VectorCategory.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/VectorCategory.php" />
     </list>
     <ignored path="wivet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -818,12 +807,12 @@
       <file leaf-file-name="MainController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3761062">
-              <caret line="43" column="40" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="40" />
+            <state vertical-scroll-proportion="-1.659292">
+              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
               <folding>
                 <element signature="e#48#83#0#PHP" expanded="true" />
-                <element signature="e#6590#6629#1#PHP" expanded="true" />
-                <element signature="e#8461#8499#1#PHP" expanded="true" />
+                <element signature="e#6592#6631#1#PHP" expanded="true" />
+                <element signature="e#8463#8501#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1644,12 +1633,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3761062">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="40" />
+        <state vertical-scroll-proportion="-1.659292">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
           <folding>
             <element signature="e#48#83#0#PHP" expanded="true" />
-            <element signature="e#6590#6629#1#PHP" expanded="true" />
-            <element signature="e#8461#8499#1#PHP" expanded="true" />
+            <element signature="e#6592#6631#1#PHP" expanded="true" />
+            <element signature="e#8463#8501#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

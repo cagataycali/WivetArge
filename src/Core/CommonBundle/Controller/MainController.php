@@ -43,13 +43,21 @@ class MainController extends Controller
 
 //        $record->setIpAddress($client_ip);
 
+        $client_ip = $request->getClientIp();
+
         $record_obj = new Record();
 
-        $record_obj -> setId(1);
-        $record_obj -> setIpAddress(1);
+        $record_obj -> setId($session->get('PHPSESSID'));
+        $record_obj -> setIpAddress($client_ip);
         $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
         $record_obj -> setRecordKey(123);
         $record_obj -> setUserAgent(21);
+
+
+        /**
+         * Test case id
+         */
+        $test_case_id = 0;
 
         # Record doesn't exist!
         if(!$record)
@@ -147,15 +155,20 @@ class MainController extends Controller
                                 $test_case_description_obj -> setId($description_key); # OBJ ID
                                 $test_case_description_obj -> setContent($test_case_description);
 
-
+                                #Test case id:
 
                                 $test_case = new TestCase();
+                                $test_case -> setId($test_case_id);
                                 $test_case -> setTestCaseDescription($test_case_description_obj);
                                 $test_case -> setInputVector($test_case_input_vector_obj);
                                 $test_case -> setMethod($test_case_method);
-                                $test_case -> setRecord(1);
+                                $test_case -> setRecord($record_obj);
 
-                                //echo $description_key . $test_case_description;
+                                $session->set('record',$record);
+                                $session->set('test_case_'.$test_case_id,$test_case);
+
+                                #Test case id ++
+                                $test_case_id++;
 
                             } # Test case descriptions end
 
