@@ -39,28 +39,41 @@ class MainController extends Controller
         # Session
         $session = $request->getSession();
 
+        # Session record
         $record = $session->get('record');
 
-//        $record->setIpAddress($client_ip);
+        if($record)
+        {
 
+            # Then record variable merge Record object!
+            $record = $em->merge($record);
+
+        }
+
+
+        # Client ip
         $client_ip = $request->getClientIp();
-
-        $record_obj = new Record();
-
-        $record_obj -> setIpAddress($client_ip);
-        $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
-
-        $em->persist($record_obj);
-
 
         /**
          * Test case id
          */
-        $test_case_id = 0;
+        $test_case_id = 1;
+
+        $test_case_count = $session->get('test_case_count');
 
         # Record doesn't exist!
-        if(!$record)
+        if(!$record or !$record->getId())
         {
+            $session->set('test_case_count',1);
+
+            # Create record obj
+            $record_obj = new Record();
+
+            $record_obj -> setIpAddress($client_ip);
+            $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
+
+            $em->persist($record_obj);
+
             # Call All arrays and work dude work!
             $test_case_descriptions = [
                 'self referencing link',
@@ -190,6 +203,8 @@ class MainController extends Controller
                                 #Test case id ++
                                 $test_case_id++;
 
+                            $session->set('test_case_count',$test_case_id);
+
                             //} # Test case descriptions end
 
                         } # Test case methods && Test case end
@@ -200,80 +215,60 @@ class MainController extends Controller
 
             }
 
-
-            echo $test_case_id;
-
-            # Attach record object from session to variable record!
-            $record_session_obj = $session->get('record');
-
-            # Then record variable merge Record object!
-            $record_session_obj = $em->merge($record_session_obj);
-
-            echo $record_session_obj->getIpAddress()."<br>";
-
-            echo count($record_session_obj->getTestCases());
-
-
-            /**
-             * Kiddie for!
-             */
-            for ( $i = 0;$i <= $test_case_id; $i++ )
-            {
-
-                $test_case_obj_session = $session->get('test_case_'.$i);
-
-                $test_case_obj_session = $em->merge($test_case_obj_session);
-
-                //$test_case_obj_session = new TestCase();
-                echo $test_case_obj_session->getMethod()->getName();
-                echo " ";
-                echo $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
-                echo " ";
-
-                echo $test_case_obj_session->getInputVector()->getEvent()->getName();
-                echo " ";
-
-                echo $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
-                echo "<br><hr>";
-
-
-            }
-
-            exit;
-
         } # Endif
 
-echo "Girmedi";
-exit;
 
-        # Client Ip
-        $client_ip = $request->getClientIp();
+        # Test case count
+       // echo $test_case_id;
 
-        # Create new Record object!
-        $record = new Record();
 
-        # Set params 4 object!
-        $record->setPhpSessionId($session->get('PHPSESSID'));
-        $record->setIpAddress($client_ip);
+        # Attach record object from session to variable record!
+        $record_session_obj = $session->get('record');
 
-        # Let's set record object to session
-        //$session->set('record',$record);
+        # Then record variable merge Record object!
+        $record_session_obj = $em->merge($record_session_obj);
 
-//
-//        echo "<pre>";
-//        var_dump($session->get('record')); # See result
-//        echo "</pre>";
-//
-//        # Attach record object from session to variable record!
-//        $record = $session->get('record');
-//
-//        # Then record variable merge Record object!
-//        $record = $em->merge($record);
-//
-//        # Result!
-//        echo $record->getIpAddress();
+        echo "Ip Address ".$record_session_obj->getIpAddress()." ";
 
-        # Return
+        $test_cases_count = count($record_session_obj->getTestCases());
+
+        # Only first init
+        echo " First init : " . $test_cases_count." ";
+
+        # From session
+        echo " From session: ".$session->get('test_case_count')."<br>";
+
+
+        /**
+         * Kiddie for!
+         */
+        for ( $i = 0;$i <= $session->get('test_case_count'); $i++ )
+        {
+
+            $test_case_obj_session = $session->get('test_case_'.$i);
+
+            $test_case_obj_session = $em->merge($test_case_obj_session);
+
+            //$test_case_obj_session = new TestCase();
+            echo $test_case_obj_session->getMethod()->getName();
+            echo " ";
+            echo $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
+            echo " ";
+
+            echo $test_case_obj_session->getInputVector()->getEvent()->getName();
+            echo " ";
+
+            echo $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
+            echo "<br><hr>";
+
+
+        }
+
+        /**
+         * Record objesi ayrı
+         * Test cases ayrı birer obje olarak kaydedildi.
+         * Return main index template
+         */
         return $this->render('CoreCommonBundle:Main:index.html.twig');
 
 //              $data = $this->container->get('profiler')->find('','', 10, '', '','',$session_id);
