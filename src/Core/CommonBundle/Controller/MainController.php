@@ -44,12 +44,9 @@ class MainController extends Controller
 
         if($record)
         {
-
             # Then record variable merge Record object!
             $record = $em->merge($record);
-
         }
-
 
         # Client ip
         $client_ip = $request->getClientIp();
@@ -57,14 +54,11 @@ class MainController extends Controller
         /**
          * Test case id
          */
-        $test_case_id = 1;
-
-        $test_case_count = $session->get('test_case_count');
+        $test_case_id = 0;
 
         # Record doesn't exist!
-        if(!$record or !$record->getId())
+        if(!$record or !$record->getIpAddress())
         {
-            $session->set('test_case_count',1);
 
             # Create record obj
             $record_obj = new Record();
@@ -203,7 +197,6 @@ class MainController extends Controller
                                 #Test case id ++
                                 $test_case_id++;
 
-                            $session->set('test_case_count',$test_case_id);
 
                             //} # Test case descriptions end
 
@@ -216,10 +209,10 @@ class MainController extends Controller
             }
 
         } # Endif
-
-
-        # Test case count
-       // echo $test_case_id;
+        else
+        {
+            echo "Zaten mevcut bir kullanıcıydın!";
+        }
 
 
         # Attach record object from session to variable record!
@@ -232,17 +225,13 @@ class MainController extends Controller
 
         $test_cases_count = count($record_session_obj->getTestCases());
 
-        # Only first init
-        echo " First init : " . $test_cases_count." ";
-
-        # From session
-        echo " From session: ".$session->get('test_case_count')."<br>";
+        echo " Created: " . $test_cases_count." ";
 
 
         /**
          * Kiddie for!
          */
-        for ( $i = 0;$i <= $session->get('test_case_count'); $i++ )
+        for ( $i = 0;$i <= count($record_session_obj->getTestCases()); $i++ )
         {
 
             $test_case_obj_session = $session->get('test_case_'.$i);
@@ -264,12 +253,15 @@ class MainController extends Controller
 
         }
 
+        exit;
+
+
         /**
          * Record objesi ayrı
          * Test cases ayrı birer obje olarak kaydedildi.
          * Return main index template
          */
-        return $this->render('CoreCommonBundle:Main:index.html.twig');
+        return $this->render('CoreCommonBundle:Main:index.html.twig',array('record'=>$record_session_obj));
 
 //              $data = $this->container->get('profiler')->find('','', 10, '', '','',$session_id);
 //        return $this->render('CoreCommonBundle:Main:index.html.twig',array('session'=>$session_id,'data'=>$data[0]["token"]));
