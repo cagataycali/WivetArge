@@ -783,7 +783,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" afterPath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Resources/views/Main/test.html.twig" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Resources/views/Main/test.html.twig" />
     </list>
     <ignored path="wivet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -804,16 +804,14 @@
     <favorites_list name="wivet" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MainController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6460177">
+            <state vertical-scroll-proportion="0.20588236">
               <caret line="181" column="69" selection-start-line="181" selection-start-column="69" selection-end-line="181" selection-end-column="69" />
               <folding>
                 <element signature="e#48#83#0#PHP" expanded="true" />
-                <element signature="e#8759#8798#1#PHP" expanded="true" />
-                <element signature="e#10630#10668#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -822,7 +820,7 @@
       <file leaf-file-name="Record.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="23.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding />
             </state>
@@ -832,7 +830,7 @@
       <file leaf-file-name="TestCase.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875">
+            <state vertical-scroll-proportion="0.0">
               <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding />
             </state>
@@ -842,7 +840,7 @@
       <file leaf-file-name="VectorCategory.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/VectorCategory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding />
             </state>
@@ -852,7 +850,7 @@
       <file leaf-file-name="TestCaseDescription.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCaseDescription.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding />
             </state>
@@ -862,7 +860,7 @@
       <file leaf-file-name="TestCaseMethod.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCaseMethod.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding />
             </state>
@@ -872,7 +870,7 @@
       <file leaf-file-name="UserAgent.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/UserAgent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding />
             </state>
@@ -1552,7 +1550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25641027">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1564,7 +1561,6 @@
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.4636785">
             <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1580,7 +1576,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCaseDescription.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding />
         </state>
@@ -1588,7 +1584,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCaseMethod.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding />
         </state>
@@ -1596,7 +1592,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/UserAgent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding />
         </state>
@@ -1604,7 +1600,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/VectorCategory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding />
         </state>
@@ -1612,7 +1608,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding />
         </state>
@@ -1632,7 +1628,6 @@
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding>
             <element signature="e#44#92#0#PHP" expanded="true" />
-            <marker date="1458307888000" expanded="true" signature="266:1006" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1647,7 +1642,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="23.125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding />
         </state>
@@ -1655,12 +1650,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6460177">
+        <state vertical-scroll-proportion="0.20588236">
           <caret line="181" column="69" selection-start-line="181" selection-start-column="69" selection-end-line="181" selection-end-column="69" />
           <folding>
             <element signature="e#48#83#0#PHP" expanded="true" />
-            <element signature="e#8759#8798#1#PHP" expanded="true" />
-            <element signature="e#10630#10668#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
