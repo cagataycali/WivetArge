@@ -41,26 +41,35 @@ class MainController extends Controller
 
         $record = $session->get('record');
 
-//        $record->setIpAddress($client_ip);
-
         $client_ip = $request->getClientIp();
 
-        $record_obj = new Record();
+        # That collect test case count!
+        $test_case_obj_count = $session->get('test_case_obj_count');
 
-        $record_obj -> setIpAddress($client_ip);
-        $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
-
-        $em->persist($record_obj);
-
-
-        /**
-         * Test case id
-         */
-        $test_case_id = 0;
 
         # Record doesn't exist!
-        if(!$record)
+        if(!$record or $test_case_obj_count == 0)
         {
+
+            /**
+             * Test case id
+             */
+            $test_case_id = 0;
+
+            # If there isn't any record
+            $record_obj = new Record();
+
+            //$record_obj -> setId(1);
+            $record_obj -> setIpAddress($client_ip);
+            $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
+            $record_obj -> setRecordKey("123");
+
+            # Set record
+            $em->persist($record_obj);
+
+            $session->set('record',$record_obj);
+
+
             # Call All arrays and work dude work!
             $test_case_descriptions = [
                 'self referencing link',
@@ -114,7 +123,7 @@ class MainController extends Controller
             foreach ($test_case_vector_categorys as $vector_category_key => $test_case_vector_category) {
 
                 $test_case_vector_category_obj = new VectorCategory();
-                $test_case_vector_category_obj ->setId($vector_category_key);
+                //$test_case_vector_category_obj ->setId($vector_category_key);
                 $test_case_vector_category_obj ->setName($test_case_vector_category);
 
                 $em->persist($test_case_vector_category_obj);
@@ -123,7 +132,7 @@ class MainController extends Controller
                 foreach ($test_case_html_elements  as $html_element_key => $test_case_html_element) {
 
                     $test_case_html_element_obj = new HtmlElement();
-                    $test_case_html_element_obj ->setId($html_element_key);
+                    //$test_case_html_element_obj ->setId($html_element_key);
                     $test_case_html_element_obj ->setName($test_case_html_element);
 
                     $em->persist($test_case_html_element_obj);
@@ -133,7 +142,7 @@ class MainController extends Controller
                     foreach ($test_case_events as $event_key =>  $test_case_event) {
 
                         $test_case_event_obj = new Event();
-                        $test_case_event_obj ->setId($event_key);
+                       // $test_case_event_obj ->setId($event_key);
                         $test_case_event_obj ->setName($test_case_event);
 
                         $em->persist($test_case_event_obj);
@@ -141,7 +150,7 @@ class MainController extends Controller
 
 
                         $test_case_input_vector_obj = new InputVector();
-                        $test_case_input_vector_obj ->setId($html_element_key);
+                        //$test_case_input_vector_obj ->setId($html_element_key);
                         $test_case_input_vector_obj ->setEvent($test_case_event_obj);
                         $test_case_input_vector_obj ->setHtmlElement($test_case_html_element_obj);
                         $test_case_input_vector_obj ->setVectorCategory($test_case_vector_category_obj);
@@ -154,7 +163,7 @@ class MainController extends Controller
 
                             # Test case request method obj
                             $test_case_method_obj = new TestCaseMethod();
-                            $test_case_method_obj ->setId($method_key);
+                            //$test_case_method_obj ->setId($method_key);
                             $test_case_method_obj ->setName($test_case_method);
 
                             $em->persist($test_case_method_obj);
@@ -175,20 +184,17 @@ class MainController extends Controller
                                 #Test case id:
 
                                 $test_case = new TestCase();
-                                $test_case -> setId($test_case_id);
+                                //$test_case -> setId($test_case_id++); # Count will inrease after set operation
                                 //$test_case -> setTestCaseDescription($test_case_description_obj);
                                 $test_case -> setInputVector($test_case_input_vector_obj);
                                 $test_case -> setMethod($test_case_method_obj);
                                 $test_case -> setRecord($record_obj);
 
-                                $session->set('record',$record_obj);
-                                $session->set('test_case_'.$test_case_id,$test_case);
-
                                 $em->persist($test_case);
 
+                                $session->set('test_case_'.$test_case_id,$test_case);
 
-                                #Test case id ++
-                                $test_case_id++;
+                                $session->set('test_case_obj_count',$test_case_id++);
 
                             //} # Test case descriptions end
 
@@ -200,84 +206,42 @@ class MainController extends Controller
 
             }
 
-
-            echo $test_case_id;
-
-            # Attach record object from session to variable record!
-            $record_session_obj = $session->get('record');
-
-            # Then record variable merge Record object!
-            $record_session_obj = $em->merge($record_session_obj);
-
-            echo $record_session_obj->getIpAddress()."<br>";
-
-            echo count($record_session_obj->getTestCases());
-
-
-            /**
-             * Kiddie for!
-             */
-            for ( $i = 0;$i <= $test_case_id; $i++ )
-            {
-
-                $test_case_obj_session = $session->get('test_case_'.$i);
-
-                $test_case_obj_session = $em->merge($test_case_obj_session);
-
-                //$test_case_obj_session = new TestCase();
-                echo $test_case_obj_session->getMethod()->getName();
-                echo " ";
-                echo $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
-                echo " ";
-
-                echo $test_case_obj_session->getInputVector()->getEvent()->getName();
-                echo " ";
-
-                echo $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
-                echo "<br><hr>";
-
-
-            }
-
-            exit;
-
         } # Endif
 
-echo "Girmedi";
-exit;
 
-        # Client Ip
-        $client_ip = $request->getClientIp();
+        $record_session_obj = $session->get('record');
 
-        # Create new Record object!
-        $record = new Record();
+        $test_case_obj_count = $session->get('test_case_obj_count');
 
-        # Set params 4 object!
-        $record->setPhpSessionId($session->get('PHPSESSID'));
-        $record->setIpAddress($client_ip);
 
-        # Let's set record object to session
-        //$session->set('record',$record);
+        /**
+         * Kiddie for!
+         */
+        for ( $i = 0;$i <= $test_case_obj_count; $i++ )
+        {
 
-//
-//        echo "<pre>";
-//        var_dump($session->get('record')); # See result
-//        echo "</pre>";
-//
-//        # Attach record object from session to variable record!
-//        $record = $session->get('record');
-//
-//        # Then record variable merge Record object!
-//        $record = $em->merge($record);
-//
-//        # Result!
-//        echo $record->getIpAddress();
+            $test_case_obj_session = $session->get('test_case_'.$i);
 
-        # Return
+            //$test_case_obj_session = $em->merge($test_case_obj_session);
+
+            # Working!
+            echo $test_case_obj_session->getMethod()->getName();
+            echo " ";
+            echo $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
+            echo " ";
+
+            echo $test_case_obj_session->getInputVector()->getEvent()->getName();
+            echo " ";
+
+            echo $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
+
+            echo $test_case_obj_session->getRecord()->getRecordKey();
+            echo "<br><hr>";
+
+
+        }
+
         return $this->render('CoreCommonBundle:Main:index.html.twig');
-
-//              $data = $this->container->get('profiler')->find('','', 10, '', '','',$session_id);
-//        return $this->render('CoreCommonBundle:Main:index.html.twig',array('session'=>$session_id,'data'=>$data[0]["token"]));
     }
 
     public function testAction(Request $request,$token)
