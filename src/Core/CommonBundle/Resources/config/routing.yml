@@ -2,6 +2,6 @@ core_common_homepage:
     path:     /
     defaults: { _controller: CoreCommonBundle:Main:index }
 
-core_common_test:
-    path:     /{token}/test
-    defaults: { _controller: CoreCommonBundle:Main:test }
+core_common_get_token:
+    path:     /{token}
+    defaults: { _controller: CoreCommonBundle:Main:getToken }

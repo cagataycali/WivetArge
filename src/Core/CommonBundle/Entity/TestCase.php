@@ -22,6 +22,13 @@ class TestCase
     private $id;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="key", type="string", length=255)
+     */
+    private $key;
+
+    /**
      * @ORM\ManyToOne(targetEntity="Record", inversedBy="test_cases")
      * @ORM\JoinColumn(name="record_id", referencedColumnName="id", onDelete="CASCADE")
      */
@@ -61,6 +68,7 @@ class TestCase
         return $this;
     }
 
+
     /**
      * Get id
      *
@@ -69,6 +77,30 @@ class TestCase
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set key
+     *
+     * @param string $key
+     *
+     * @return TestCase
+     */
+    public function setKey($key)
+    {
+        $this->key = $key;
+
+        return $this;
+    }
+
+    /**
+     * Get key
+     *
+     * @return string
+     */
+    public function getKey()
+    {
+        return $this->key;
     }
 
     /**

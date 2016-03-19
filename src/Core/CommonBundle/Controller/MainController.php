@@ -22,6 +22,11 @@ class MainController extends Controller
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
 
 
+    # Generate Random string
+    function generateRandomString($length = 10)
+    {
+        return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
+    }
     /**
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
@@ -62,7 +67,7 @@ class MainController extends Controller
             //$record_obj -> setId(1);
             $record_obj -> setIpAddress($client_ip);
             $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
-            $record_obj -> setRecordKey("123");
+            $record_obj -> setRecordKey($this->generateRandomString());
 
             # Set record
             $em->persist($record_obj);
@@ -128,6 +133,8 @@ class MainController extends Controller
 
                 $em->persist($test_case_vector_category_obj);
 
+
+
                 # Test case html element's
                 foreach ($test_case_html_elements  as $html_element_key => $test_case_html_element) {
 
@@ -148,12 +155,12 @@ class MainController extends Controller
                         $em->persist($test_case_event_obj);
 
 
-
                         $test_case_input_vector_obj = new InputVector();
                         //$test_case_input_vector_obj ->setId($html_element_key);
                         $test_case_input_vector_obj ->setEvent($test_case_event_obj);
                         $test_case_input_vector_obj ->setHtmlElement($test_case_html_element_obj);
                         $test_case_input_vector_obj ->setVectorCategory($test_case_vector_category_obj);
+
 
                         $em->persist($test_case_input_vector_obj);
 
@@ -183,12 +190,16 @@ class MainController extends Controller
 
                                 #Test case id:
 
+                                $rand_string = $this->generateRandomString();
+
                                 $test_case = new TestCase();
                                 //$test_case -> setId($test_case_id++); # Count will inrease after set operation
                                 //$test_case -> setTestCaseDescription($test_case_description_obj);
                                 $test_case -> setInputVector($test_case_input_vector_obj);
                                 $test_case -> setMethod($test_case_method_obj);
                                 $test_case -> setRecord($record_obj);
+                                $test_case -> setKey($rand_string);
+
 
                                 $em->persist($test_case);
 
@@ -226,16 +237,20 @@ class MainController extends Controller
 
             # Working!
             echo $test_case_obj_session->getMethod()->getName();
-            echo " ";
+            echo "--";
             echo $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
-            echo " ";
+            echo "--";
 
             echo $test_case_obj_session->getInputVector()->getEvent()->getName();
-            echo " ";
+            echo "--";
 
             echo $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
+            echo "--";
 
-            echo $test_case_obj_session->getRecord()->getRecordKey();
+            echo " Test case key:".$test_case_obj_session->getKey();
+            echo "--";
+
+            echo " Record key:".$test_case_obj_session->getRecord()->getRecordKey();
             echo "<br><hr>";
 
 
@@ -308,6 +323,18 @@ class MainController extends Controller
         //return new JsonResponse($yanit);
         return $this->render('CoreCommonBundle:Main:test.html.twig');
 
+    }
+
+    public function getTokenAction(Request $request,$token)
+    {
+//        echo $this->generateRandomString(5)."<br>";
+//        echo $this->generateRandomString(5)."<br>";
+//        echo $this->generateRandomString(5)."<br>";
+//
+//        echo $token;
+
+
+        return $this->render('CoreCommonBundle:Main:index.html.twig');
     }
 
 }
