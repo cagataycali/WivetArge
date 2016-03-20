@@ -376,7 +376,7 @@ class MainController extends Controller
                 $response["category"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
                 $response["test_case_key"] = " Test case key:".$test_case_obj_session->getKey();
                 $response["record_key"] = " Record key:".$test_case_obj_session->getRecord()->getRecordKey();
-                $response["weight"] = " Weight:".$test_case_obj_session->getWeight();
+//             todo:   $response["weight"] = " Weight:".$test_case_obj_session->getWeight();
 
             }
 

@@ -61,21 +61,6 @@ class TestCase
 
 
     /**
-     * Set id
-     *
-     * @param integer $id
-     *
-     * @return TestCase
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
-
-    /**
      * Get id
      *
      * @return integer
@@ -107,6 +92,30 @@ class TestCase
     public function getKey()
     {
         return $this->key;
+    }
+
+    /**
+     * Set weight
+     *
+     * @param integer $weight
+     *
+     * @return TestCase
+     */
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
+
+        return $this;
+    }
+
+    /**
+     * Get weight
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return $this->weight;
     }
 
     /**
@@ -203,29 +212,5 @@ class TestCase
     public function getInputVector()
     {
         return $this->input_vector;
-    }
-
-    /**
-     * Set weight
-     *
-     * @param integer $weight
-     *
-     * @return TestCase
-     */
-    public function setWeight($weight)
-    {
-        $this->weight = $weight;
-
-        return $this;
-    }
-
-    /**
-     * Get weight
-     *
-     * @return integer
-     */
-    public function getWeight()
-    {
-        return $this->weight;
     }
 }
