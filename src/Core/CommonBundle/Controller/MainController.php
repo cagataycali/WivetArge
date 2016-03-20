@@ -27,11 +27,35 @@ class MainController extends Controller
 {
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
 
-    function sendRequest($payload)
+    function migrateSession(Request $request,$token)
     {
-        $restClient = $this->container->get('circle.restclient');
 
-        $output = $this->get('api_caller')->call(new HttpGetHtml('http://localhost/hacking/web/app_dev.php/',$payload));
+        $session = $request->getSession();
+
+        ob_start();
+
+        # The session id isn't yours.
+        if ( $session->getId() != $token )
+        {
+
+            # But no problem dude,I'll change!
+            session_id($token);
+
+            # Clear the other session!
+            session_regenerate_id(true);
+
+            # Then change header
+            $request->cookies->set('PHPSESSID',$token);
+        }
+
+        return 1;
+    }
+
+    function sendRequest($record_obj)
+    {
+        $array = array();
+
+        $output = $this->get('api_caller')->call(new HttpGetJson("http://localhost/hacking/web/app_dev.php/".$record_obj->getIpAddress(), $array));
 
     }
 
@@ -235,10 +259,8 @@ class MainController extends Controller
 
             }
 
-            $array = array();
-
-            $output = $this->get('api_caller')->call(new HttpGetJson("http://localhost/hacking/web/app_dev.php/".$record_obj->getIpAddress(), $array));
-
+            # Send request external API :)
+            $this->sendRequest($record_obj);
 
         } # Endif
 
@@ -294,23 +316,9 @@ class MainController extends Controller
 //
         #todo read migrate other session by recordkey.
 
+       $this->migrateSession($request,$token);
+
         $session = $request->getSession();
-
-        ob_start();
-
-        # The session id isn't yours.
-        if ( $session->getId() != $token )
-        {
-
-            # But no problem dude,I'll change!
-            session_id($token);
-
-            # Clear the other session!
-            session_regenerate_id(true);
-
-            # Then change header
-            $request->cookies->set('PHPSESSID',$token);
-        }
 
         # That collect test case count!
         $test_case_obj_count = $session->get('test_case_obj_count');
@@ -378,8 +386,11 @@ class MainController extends Controller
                 $response["category"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
                 $response["test_case_key"] = " Test case key:".$test_case_obj_session->getKey();
                 $response["record_key"] = " Record key:".$test_case_obj_session->getRecord()->getRecordKey();
-//             todo:   $response["weight"] = " Weight:".$test_case_obj_session->getWeight();
 
+                $weight = $test_case_obj_session->getWeight() + 1;
+                $test_case_obj_session->setWeight($weight);
+
+                $response["weight"] = " Weight:".$test_case_obj_session->getWeight();
             }
 
         }
