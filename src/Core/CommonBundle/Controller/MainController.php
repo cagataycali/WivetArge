@@ -280,70 +280,9 @@ class MainController extends Controller
         return $this->render('CoreCommonBundle:Main:index.html.twig');
     }
 
-    public function testAction(Request $request,$token)
+    public function testAction()
     {
-//        $session_id = $request->cookies->get('PHPSESSID');
-//
-//        $request_uri = $request->getUri();
-//        $client_ip = $request->getClientIp();
-//        $method = $request->getMethod();
-//
-//        /**
-//         * Eğer bir istemci,
-//         * Bu ip adresinden,
-//         * Bu url'e
-//         *
-//         */
-//        $data = $this->container->get('profiler')->find($client_ip, '', 10, '', '','',$session_id);
-//
-//        echo $token."<br>";
-//        echo $data[0]['token']."<br>";
-//
-//        if($data[0]['token'] == $token)
-//        {
-//            echo "Token aynı!";
-//        }
-//        else
-//        {
-//            echo "Token farklı";
-//        }
-//
-//        exit;
-//
-
-        /**
-         * Eğer kullanıcı saçma bir token gönderdiyse..
-         */
-        $session_id = $request->cookies->get('PHPSESSID');
-
-        $request_uri = $request->getUri();
-        $client_ip = $request->getClientIp();
-        $method = $request->getMethod();
-
-        /**
-         * Eğer bir istemci,
-         * Bu ip adresinden,
-         * Bu url'e
-         *
-         */
-        $data = $this->container->get('profiler')->find($client_ip, '', 100, '', '','',$session_id);
-
-        echo $token."<br>";
-        echo $data[0]['token']."<br>";
-
-        if($data[0]['token'] == $token)
-        {
-            echo "Token aynı!";
-        }
-        else
-        {
-            echo "Token farklı";
-        }
-
-        //todo : list of inputs vectors..
-        //return new JsonResponse($yanit);
         return $this->render('CoreCommonBundle:Main:test.html.twig');
-
     }
 
     public function getTokenAction(Request $request,$token)
@@ -406,6 +345,43 @@ class MainController extends Controller
 
 
         return $this->render('CoreCommonBundle:Main:index.html.twig');
+    }
+
+    public function successAction(Request $request)
+    {
+        echo $test_case_token = $request->request->get('test_case_token');
+        echo $token = $request->request->get('token');
+
+        $session = $request->getSession();
+
+        $record = $session->get('record');
+
+        $test_case_obj_count = $session->get('test_case_obj_count');
+
+        $response = array();
+
+        for($i = 0; $i < $test_case_obj_count+1; $i++)
+        {
+            $test_case_obj_session = $session->get('test_case_'.$i);
+
+           // if ($test_case_obj_session->getRecord()->getRecordKey() === $token && $test_case_obj_session->getKey() == $test_case_token)
+            if ($test_case_obj_session->getKey() == $test_case_token)
+            {
+
+                # Working!
+                $response["method"] = $test_case_obj_session->getMethod()->getName();
+                $response["html_element_name"] = $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
+                $response["event"] = $test_case_obj_session->getInputVector()->getEvent()->getName();
+                $response["category"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
+                $response["test_case_key"] = " Test case key:".$test_case_obj_session->getKey();
+                $response["record_key"] = " Record key:".$test_case_obj_session->getRecord()->getRecordKey();
+                $response["weight"] = " Weight:".$test_case_obj_session->getWeight();
+
+            }
+
+        }
+
+        return new JsonResponse($response);
     }
 
 }
