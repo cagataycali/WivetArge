@@ -52,6 +52,13 @@ class TestCase
      */
     private $input_vector;
 
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="weight", type="integer")
+     */
+    private $weight;
+
 
 
     /**
@@ -197,5 +204,29 @@ class TestCase
     public function getInputVector()
     {
         return $this->input_vector;
+    }
+
+    /**
+     * Set weight
+     *
+     * @param integer $weight
+     *
+     * @return TestCase
+     */
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
+
+        return $this;
+    }
+
+    /**
+     * Get weight
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return $this->weight;
     }
 }

@@ -44,6 +44,7 @@ class MainController extends Controller
         # Session
         $session = $request->getSession();
 
+
         $record = $session->get('record');
 
         $client_ip = $request->getClientIp();
@@ -67,7 +68,7 @@ class MainController extends Controller
             //$record_obj -> setId(1);
             $record_obj -> setIpAddress($client_ip);
             $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
-            $record_obj -> setRecordKey($this->generateRandomString());
+            $record_obj -> setRecordKey($session->getId());
 
             # Set record
             $em->persist($record_obj);
@@ -199,6 +200,7 @@ class MainController extends Controller
                                 $test_case -> setMethod($test_case_method_obj);
                                 $test_case -> setRecord($record_obj);
                                 $test_case -> setKey($rand_string);
+                                $test_case -> setWeight(0);
 
 
                                 $em->persist($test_case);
@@ -255,6 +257,8 @@ class MainController extends Controller
 
 
         }
+
+
 
         return $this->render('CoreCommonBundle:Main:index.html.twig');
     }
@@ -331,7 +335,66 @@ class MainController extends Controller
 //        echo $this->generateRandomString(5)."<br>";
 //        echo $this->generateRandomString(5)."<br>";
 //
-//        echo $token;
+        #todo read migrate other session by recordkey.
+
+        $session = $request->getSession();
+
+        ob_start();
+
+        if ( $session->getId() != $token )
+        {
+            echo "The token isn't yours";
+
+            # Onceki session id değerini sil!
+            session_id($token);
+            session_regenerate_id(true);
+            # Onceki session'u sil!
+
+            echo "Session changed by your crawler.";
+
+
+          // echo $request->cookies->get('PHPSESSID')."-";
+
+           $request->cookies->set('PHPSESSID',$token);
+
+           //echo $request->cookies->get('PHPSESSID');
+
+
+        }
+
+
+
+        # That collect test case count!
+        $test_case_obj_count = $session->get('test_case_obj_count');
+        //$test_case_obj_count = 447;
+
+        for($i = 0; $i < $test_case_obj_count+1; $i++)
+        {
+            $test_case_obj_session = $session->get('test_case_'.$i);
+
+            if ($test_case_obj_session->getRecord()->getRecordKey() === $token)
+            {
+
+                # Working!
+                echo $test_case_obj_session->getMethod()->getName();
+                echo "--";
+                echo $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
+                echo "--";
+
+                echo $test_case_obj_session->getInputVector()->getEvent()->getName();
+                echo "--";
+
+                echo $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
+                echo "--";
+
+                echo " Test case key:".$test_case_obj_session->getKey();
+                echo "--";
+
+                echo " Record key:".$test_case_obj_session->getRecord()->getRecordKey();
+                echo "<br><hr>";
+            }
+
+        }
 
 
         return $this->render('CoreCommonBundle:Main:index.html.twig');
