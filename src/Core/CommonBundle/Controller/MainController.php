@@ -303,9 +303,32 @@ class MainController extends Controller
         return $this->render('CoreCommonBundle:Main:index.html.twig');
     }
 
-    public function testAction()
+    public function testAction(Request $request)
     {
-        return $this->render('CoreCommonBundle:Main:test.html.twig');
+
+        $session = $request->getSession();
+
+        # That collect test case count!
+        $test_case_obj_count = $session->get('test_case_obj_count');
+        //$test_case_obj_count = 447;
+
+        $test_cases_array = array();
+
+        # Collect all test inputs
+        for($i = 0; $i < $test_case_obj_count+1; $i++)
+        {
+            $test_case_obj_session = $session->get('test_case_'.$i);
+
+            $test_cases_array[$i]["id"] = $test_case_obj_session->getId();
+            $test_cases_array[$i]["method_name"] = $test_case_obj_session->getMethod()->getName();
+            $test_cases_array[$i]["input_vector_name"] = $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
+            $test_cases_array[$i]["event_name"] = $test_case_obj_session->getInputVector()->getEvent()->getName();
+            $test_cases_array[$i]["vector_category_name"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
+            $test_cases_array[$i]["test_case_key"] = $test_case_obj_session->getKey();
+            $test_cases_array[$i]["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
+        }
+
+        return $this->render('CoreCommonBundle:Main:test.html.twig',array('test_cases'=>$test_cases_array));
     }
 
     public function getTokenAction(Request $request,$token)
@@ -358,8 +381,20 @@ class MainController extends Controller
 
     public function successAction(Request $request)
     {
-        echo $test_case_token = $request->request->get('test_case_token');
-        echo $token = $request->request->get('token');
+        $test_case_token = $request->request->get('token');
+        $token = $request->request->get('event_token');
+
+        # Explode param
+        $test_case_token = explode("_",$test_case_token);
+        $token = explode("_",$token);
+
+
+        $test_case_key      = $test_case_token[0];
+        $record_key         = $test_case_token[1];
+
+        $input_vector_name  = $token[0];
+        $event_name         = $token[1];
+
 
         $session = $request->getSession();
 
@@ -369,31 +404,34 @@ class MainController extends Controller
 
         $response = array();
 
-        $response["Hello"] = "Json!";
 
-        for($i = 0; $i < $test_case_obj_count+1; $i++)
-        {
-            $test_case_obj_session = $session->get('test_case_'.$i);
+        for($i = 0; $i < $test_case_obj_count+1; $i++) {
+            $test_case_obj_session = $session->get('test_case_' . $i);
 
-           // if ($test_case_obj_session->getRecord()->getRecordKey() === $token && $test_case_obj_session->getKey() == $test_case_token)
-            if ($test_case_obj_session->getKey() == $test_case_token)
-            {
+            # If everything OK
+            if (
+                $test_case_obj_session->getRecord()->getRecordKey() === $record_key &&
+                $test_case_obj_session->getKey() === $test_case_key
+//                $test_case_obj_session->getInputVector()->getVectorCategory()->getName() === $input_vector_name &&
+//                $test_case_obj_session->getInputVector()->getEvent()->getName() === $event_name
+            ) {
 
                 # Working!
                 $response["method"] = $test_case_obj_session->getMethod()->getName();
                 $response["html_element_name"] = $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
                 $response["event"] = $test_case_obj_session->getInputVector()->getEvent()->getName();
                 $response["category"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
-                $response["test_case_key"] = " Test case key:".$test_case_obj_session->getKey();
-                $response["record_key"] = " Record key:".$test_case_obj_session->getRecord()->getRecordKey();
+                $response["test_case_key"] = $test_case_obj_session->getKey();
+                $response["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
 
                 $weight = $test_case_obj_session->getWeight() + 1;
                 $test_case_obj_session->setWeight($weight);
 
-                $response["weight"] = " Weight:".$test_case_obj_session->getWeight();
+                $response["weight"] = $test_case_obj_session->getWeight();
             }
-
         }
+
+
 
         return new JsonResponse($response);
     }
