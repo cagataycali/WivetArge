@@ -233,6 +233,11 @@ class MainController extends Controller
 
             }
 
+            $array = array();
+
+            $output = $this->get('api_caller')->call(new HttpGetJson("http://localhost/hacking/web/app_dev.php/".$record_obj->getIpAddress(), $array));
+
+
         } # Endif
 
 
@@ -271,12 +276,6 @@ class MainController extends Controller
 
 
         }
-
-
-        $array = array();
-
-        $output = $this->get('api_caller')->call(new HttpGetJson("http://localhost/hacking/web/app_dev.php/".$record_session_obj->getIpAddress(), $array));
-
 
         return $this->render('CoreCommonBundle:Main:index.html.twig');
     }

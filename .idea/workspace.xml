@@ -784,11 +784,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" afterPath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" />
     </list>
     <ignored path="wivet.iws" />
@@ -814,15 +809,15 @@
       <file leaf-file-name="MainController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29503918">
-              <caret line="278" column="0" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8015666">
+              <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
               <folding>
                 <element signature="e#48#65#0#PHP" expanded="true" />
-                <element signature="e#9226#9265#1#PHP" expanded="true" />
-                <element signature="e#9279#10915#0#PHP" expanded="false" />
-                <element signature="e#10868#10906#1#PHP" expanded="true" />
-                <element signature="e#10921#12806#0#PHP" expanded="false" />
-                <element signature="e#12759#12798#1#PHP" expanded="true" />
+                <element signature="e#9166#9205#1#PHP" expanded="true" />
+                <element signature="e#9219#10855#0#PHP" expanded="false" />
+                <element signature="e#10808#10846#1#PHP" expanded="true" />
+                <element signature="e#10861#12746#0#PHP" expanded="false" />
+                <element signature="e#12699#12738#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1840,15 +1835,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29503918">
-          <caret line="278" column="0" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8015666">
+          <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
           <folding>
             <element signature="e#48#65#0#PHP" expanded="true" />
-            <element signature="e#9226#9265#1#PHP" expanded="true" />
-            <element signature="e#9279#10915#0#PHP" expanded="false" />
-            <element signature="e#10868#10906#1#PHP" expanded="true" />
-            <element signature="e#10921#12806#0#PHP" expanded="false" />
-            <element signature="e#12759#12798#1#PHP" expanded="true" />
+            <element signature="e#9166#9205#1#PHP" expanded="true" />
+            <element signature="e#9219#10855#0#PHP" expanded="false" />
+            <element signature="e#10808#10846#1#PHP" expanded="true" />
+            <element signature="e#10861#12746#0#PHP" expanded="false" />
+            <element signature="e#12699#12738#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
