@@ -21,6 +21,23 @@ class MainController extends Controller
 {
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
 
+    function sendRequest($payload)
+    {
+        $restClient = $this->container->get('circle.restclient');
+
+
+        try {
+
+            $restClient->get('http://localhost/hacking/web/app_dev.php/'.$payload);
+
+            return 1;
+
+        } catch (OperationTimedOutException $exception) {
+
+            return 0;
+
+        }
+    }
 
     # Generate Random string
     function generateRandomString($length = 10)
@@ -72,8 +89,12 @@ class MainController extends Controller
             # Set record
             $em->persist($record_obj);
 
-            #todo remove when prod!
-            $em->flush();
+
+            $restClient = $this->container->get('circle.restclient');
+            $restClient->get('http://localhost/hacking/web/app_dev.php/'.$request->cookies->get('PHPSESSID'));
+
+            # Send server to set php sessid
+            $this->sendRequest($request->cookies->get('PHPSESSID'));
 
             $session->set('record',$record_obj);
 
