@@ -783,9 +783,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" afterPath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCase.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCase.php" />
     </list>
     <ignored path="wivet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -810,14 +808,14 @@
       <file leaf-file-name="MainController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.784">
-              <caret line="367" column="8" selection-start-line="367" selection-start-column="8" selection-end-line="367" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.4">
+              <caret line="340" column="8" selection-start-line="340" selection-start-column="8" selection-end-line="340" selection-end-column="8" />
               <folding>
                 <element signature="e#48#83#0#PHP" expanded="true" />
                 <element signature="e#8513#8552#1#PHP" expanded="true" />
                 <element signature="e#8566#10202#0#PHP" expanded="false" />
                 <element signature="e#10155#10193#1#PHP" expanded="true" />
-                <element signature="e#12186#12225#1#PHP" expanded="true" />
+                <element signature="e#12033#12072#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1696,14 +1694,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.784">
-          <caret line="367" column="8" selection-start-line="367" selection-start-column="8" selection-end-line="367" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.4">
+          <caret line="340" column="8" selection-start-line="340" selection-start-column="8" selection-end-line="340" selection-end-column="8" />
           <folding>
             <element signature="e#48#83#0#PHP" expanded="true" />
             <element signature="e#8513#8552#1#PHP" expanded="true" />
             <element signature="e#8566#10202#0#PHP" expanded="false" />
             <element signature="e#10155#10193#1#PHP" expanded="true" />
-            <element signature="e#12186#12225#1#PHP" expanded="true" />
+            <element signature="e#12033#12072#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

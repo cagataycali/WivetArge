@@ -339,30 +339,19 @@ class MainController extends Controller
 
         $session = $request->getSession();
 
-        ob_start();
-
+        # The session id isn't yours.
         if ( $session->getId() != $token )
         {
-            echo "The token isn't yours";
 
-            # Onceki session id değerini sil!
+            # But no problem dude,I'll change!
             session_id($token);
+
+            # Clear the other session!
             session_regenerate_id(true);
-            # Onceki session'u sil!
 
-            echo "Session changed by your crawler.";
-
-
-          // echo $request->cookies->get('PHPSESSID')."-";
-
-           $request->cookies->set('PHPSESSID',$token);
-
-           //echo $request->cookies->get('PHPSESSID');
-
-
+            # Then change header
+            $request->cookies->set('PHPSESSID',$token);
         }
-
-
 
         # That collect test case count!
         $test_case_obj_count = $session->get('test_case_obj_count');
