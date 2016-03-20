@@ -3,7 +3,7 @@
 {% block body %}
     Test case
 {#Foreach loops for case#}
-    <a id="2uYpnGOJTb" data-href="{{ path('core_common_test_success') }}" class="a_onclick">Test case</a>
+    <a id="Ky6tDTh8Lb" data-href="{{ path('core_common_test_success') }}" class="a_onclick">Test case</a>
 {% endblock body %}
 
 {% block javascripts %}
@@ -12,7 +12,6 @@
 
             alert("Tıklandı");
 
-            event.preventDefault();
             var element = $(this);
 
             var token = element.attr('id');

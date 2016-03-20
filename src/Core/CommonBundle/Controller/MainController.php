@@ -361,6 +361,8 @@ class MainController extends Controller
 
         $response = array();
 
+        $response["Hello"] = "Json!";
+
         for($i = 0; $i < $test_case_obj_count+1; $i++)
         {
             $test_case_obj_session = $session->get('test_case_'.$i);
