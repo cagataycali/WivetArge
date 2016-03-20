@@ -68,6 +68,8 @@ class Event
         return $this;
     }
 
+
+
     /**
      * Get id
      *

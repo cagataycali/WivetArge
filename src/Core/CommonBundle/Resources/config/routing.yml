@@ -2,6 +2,14 @@ core_common_homepage:
     path:     /
     defaults: { _controller: CoreCommonBundle:Main:index }
 
-core_common_test:
-    path:     /{token}/test
+core_common_get_token:
+    path:     /{token}
+    defaults: { _controller: CoreCommonBundle:Main:getToken }
+
+core_common_test_case:
+    path:     /test-case/
     defaults: { _controller: CoreCommonBundle:Main:test }
+
+core_common_test_success:
+    path:     /test-case/success/
+    defaults: { _controller: CoreCommonBundle:Main:success }

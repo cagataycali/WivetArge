@@ -21,6 +21,13 @@ class TestCase
     private $id;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="key", type="string", length=255)
+     */
+    private $key;
+
+    /**
      * @ORM\ManyToOne(targetEntity="Record", inversedBy="test_cases")
      * @ORM\JoinColumn(name="record_id", referencedColumnName="id", onDelete="CASCADE")
      */
@@ -44,6 +51,13 @@ class TestCase
      */
     private $input_vector;
 
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="weight", type="integer")
+     */
+    private $weight;
+
 
 
     /**
@@ -60,6 +74,7 @@ class TestCase
         return $this;
     }
 
+
     /**
      * Get id
      *
@@ -68,6 +83,30 @@ class TestCase
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set key
+     *
+     * @param string $key
+     *
+     * @return TestCase
+     */
+    public function setKey($key)
+    {
+        $this->key = $key;
+
+        return $this;
+    }
+
+    /**
+     * Get key
+     *
+     * @return string
+     */
+    public function getKey()
+    {
+        return $this->key;
     }
 
     /**
@@ -164,5 +203,29 @@ class TestCase
     public function getInputVector()
     {
         return $this->input_vector;
+    }
+
+    /**
+     * Set weight
+     *
+     * @param integer $weight
+     *
+     * @return TestCase
+     */
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
+
+        return $this;
+    }
+
+    /**
+     * Get weight
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return $this->weight;
     }
 }
