@@ -3,7 +3,7 @@ core_common_homepage:
     defaults: { _controller: CoreCommonBundle:Main:index }
 
 core_common_get_token:
-    path:     /{token}
+    path:     /token/
     defaults: { _controller: CoreCommonBundle:Main:getToken }
 
 core_common_test_case:
@@ -13,3 +13,7 @@ core_common_test_case:
 core_common_test_success:
     path:     /test-case/success/
     defaults: { _controller: CoreCommonBundle:Main:success }
+
+core_common_test_results:
+    path:     /test-case/results/
+    defaults: { _controller: CoreCommonBundle:Main:results }

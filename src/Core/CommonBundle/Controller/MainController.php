@@ -27,6 +27,73 @@ class MainController extends Controller
 {
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
 
+    public function getTestCases(Request $request)
+    {
+        $session = $request->getSession();
+
+        # That collect test case count!
+        $test_case_obj_count = $session->get('test_case_obj_count');
+        //$test_case_obj_count = 447;
+
+        $test_cases_array = array();
+
+        # Collect all test inputs
+        for($i = 0; $i < $test_case_obj_count+1; $i++)
+        {
+            $test_case_obj_session = $session->get('test_case_'.$i);
+
+            $test_cases_array[$i]["id"] = $test_case_obj_session->getId();
+            $test_cases_array[$i]["method_name"] = $test_case_obj_session->getMethod()->getName();
+            $test_cases_array[$i]["input_vector_name"] = $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
+            $test_cases_array[$i]["event_name"] = $test_case_obj_session->getInputVector()->getEvent()->getName();
+            $test_cases_array[$i]["vector_category_name"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
+            $test_cases_array[$i]["test_case_key"] = $test_case_obj_session->getKey();
+            $test_cases_array[$i]["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
+            $test_cases_array[$i]["weight"] = $test_case_obj_session->getWeight();
+        }
+
+        return $test_cases_array;
+    }
+
+    public function getTestCaseSuccess(Request $request,$record_key,$test_case_key)
+    {
+        $session = $request->getSession();
+
+        $test_case_obj_count = $session->get('test_case_obj_count');
+
+        $response = array();
+
+        for($i = 0; $i < $test_case_obj_count+1; $i++) {
+
+            $test_case_obj_session = $session->get('test_case_' . $i);
+
+            # If everything OK
+            if (
+                $test_case_obj_session->getRecord()->getRecordKey() === $record_key &&
+                $test_case_obj_session->getKey() === $test_case_key
+            ) {
+
+                # Working!
+                $response["method"] = $test_case_obj_session->getMethod()->getName();
+                $response["html_element_name"] = $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
+                $response["event"] = $test_case_obj_session->getInputVector()->getEvent()->getName();
+                $response["category"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
+                $response["test_case_key"] = $test_case_obj_session->getKey();
+                $response["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
+                $response["weight"] = $test_case_obj_session->getWeight();
+
+                $weight = $test_case_obj_session->getWeight() + 1;
+                $test_case_obj_session->setWeight($weight);
+
+                $response["weight"] = $test_case_obj_session->getWeight();
+            }
+        }
+
+
+        return $response;
+    }
+
+//    todo : migrate session doesn't working properly
     function migrateSession(Request $request,$token)
     {
 
@@ -48,7 +115,7 @@ class MainController extends Controller
             $request->cookies->set('PHPSESSID',$token);
         }
 
-        return 1;
+        return $request->cookies->get('PHPSESSID');
     }
 
     function sendRequest($record_obj)
@@ -70,7 +137,6 @@ class MainController extends Controller
      */
     public function indexAction(Request $request)
     {
-
 
         #Doctrine
         $em = $this->getDoctrine()->getManager();
@@ -109,8 +175,6 @@ class MainController extends Controller
             $record_obj -> setRecordKey($session->getId());
             # Set record
             $em->persist($record_obj);
-
-
 
             $session->set('record',$record_obj);
 
@@ -265,118 +329,24 @@ class MainController extends Controller
         } # Endif
 
 
-        $record_session_obj = $session->get('record');
-
-        $test_case_obj_count = $session->get('test_case_obj_count');
-
-        /**
-         * Kiddie for!
-         */
-        for ( $i = 0;$i <= $test_case_obj_count; $i++ )
-        {
-
-            $test_case_obj_session = $session->get('test_case_'.$i);
-
-            //$test_case_obj_session = $em->merge($test_case_obj_session);
-
-            # Working!
-            echo $test_case_obj_session->getMethod()->getName();
-            echo "--";
-            echo $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
-            echo "--";
-
-            echo $test_case_obj_session->getInputVector()->getEvent()->getName();
-            echo "--";
-
-            echo $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
-            echo "--";
-
-            echo " Test case key:".$test_case_obj_session->getKey();
-            echo "--";
-
-            echo " Record key:".$test_case_obj_session->getRecord()->getRecordKey();
-            echo "<br><hr>";
-
-
-        }
-
-        return $this->render('CoreCommonBundle:Main:index.html.twig');
+        return $this->render('CoreCommonBundle:Main:index.html.twig',array('phpsessid'=>$request->cookies->get('PHPSESSID')));
     }
 
     public function testAction(Request $request)
     {
-
-        $session = $request->getSession();
-
-        # That collect test case count!
-        $test_case_obj_count = $session->get('test_case_obj_count');
-        //$test_case_obj_count = 447;
-
-        $test_cases_array = array();
-
-        # Collect all test inputs
-        for($i = 0; $i < $test_case_obj_count+1; $i++)
-        {
-            $test_case_obj_session = $session->get('test_case_'.$i);
-
-            $test_cases_array[$i]["id"] = $test_case_obj_session->getId();
-            $test_cases_array[$i]["method_name"] = $test_case_obj_session->getMethod()->getName();
-            $test_cases_array[$i]["input_vector_name"] = $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
-            $test_cases_array[$i]["event_name"] = $test_case_obj_session->getInputVector()->getEvent()->getName();
-            $test_cases_array[$i]["vector_category_name"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
-            $test_cases_array[$i]["test_case_key"] = $test_case_obj_session->getKey();
-            $test_cases_array[$i]["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
-        }
-
-        return $this->render('CoreCommonBundle:Main:test.html.twig',array('test_cases'=>$test_cases_array));
+        return $this->render('CoreCommonBundle:Main:test.html.twig',array('test_cases'=> $this->getTestCases($request)));
     }
 
-    public function getTokenAction(Request $request,$token)
+    public function getTokenAction(Request $request)
     {
-//        echo $this->generateRandomString(5)."<br>";
-//        echo $this->generateRandomString(5)."<br>";
-//        echo $this->generateRandomString(5)."<br>";
-//
-        #todo read migrate other session by recordkey.
 
-       $this->migrateSession($request,$token);
+        $token = $request->request->get('token');
 
-        $session = $request->getSession();
+        # Migrate session
+        $this->migrateSession($request,$token);
 
-        # That collect test case count!
-        $test_case_obj_count = $session->get('test_case_obj_count');
-        //$test_case_obj_count = 447;
-
-        for($i = 0; $i < $test_case_obj_count+1; $i++)
-        {
-            $test_case_obj_session = $session->get('test_case_'.$i);
-
-            if ($test_case_obj_session->getRecord()->getRecordKey() === $token)
-            {
-
-                # Working!
-                echo $test_case_obj_session->getMethod()->getName();
-                echo "--";
-                echo $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
-                echo "--";
-
-                echo $test_case_obj_session->getInputVector()->getEvent()->getName();
-                echo "--";
-
-                echo $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
-                echo "--";
-
-                echo " Test case key:".$test_case_obj_session->getKey();
-                echo "--";
-
-                echo " Record key:".$test_case_obj_session->getRecord()->getRecordKey();
-                echo "<br><hr>";
-            }
-
-        }
-
-
-        return $this->render('CoreCommonBundle:Main:index.html.twig');
+        # Redirect test case results
+        return $this->redirectToRoute('core_common_homepage');
     }
 
     public function successAction(Request $request)
@@ -394,46 +364,21 @@ class MainController extends Controller
 
         $input_vector_name  = $token[0];
         $event_name         = $token[1];
+//        Todo : input vector and event name validate!
 
-
-        $session = $request->getSession();
-
-        $record = $session->get('record');
-
-        $test_case_obj_count = $session->get('test_case_obj_count');
-
-        $response = array();
-
-
-        for($i = 0; $i < $test_case_obj_count+1; $i++) {
-            $test_case_obj_session = $session->get('test_case_' . $i);
-
-            # If everything OK
-            if (
-                $test_case_obj_session->getRecord()->getRecordKey() === $record_key &&
-                $test_case_obj_session->getKey() === $test_case_key
-//                $test_case_obj_session->getInputVector()->getVectorCategory()->getName() === $input_vector_name &&
-//                $test_case_obj_session->getInputVector()->getEvent()->getName() === $event_name
-            ) {
-
-                # Working!
-                $response["method"] = $test_case_obj_session->getMethod()->getName();
-                $response["html_element_name"] = $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
-                $response["event"] = $test_case_obj_session->getInputVector()->getEvent()->getName();
-                $response["category"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
-                $response["test_case_key"] = $test_case_obj_session->getKey();
-                $response["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
-
-                $weight = $test_case_obj_session->getWeight() + 1;
-                $test_case_obj_session->setWeight($weight);
-
-                $response["weight"] = $test_case_obj_session->getWeight();
-            }
-        }
-
-
+        $response = $this->getTestCaseSuccess($request,$record_key,$test_case_key);
 
         return new JsonResponse($response);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     * Return test cases
+     */
+    public function resultsAction(Request $request)
+    {
+        return $this->render('CoreCommonBundle:Main:results.html.twig',array('test_cases'=>$this->getTestCases($request)));
     }
 
 }

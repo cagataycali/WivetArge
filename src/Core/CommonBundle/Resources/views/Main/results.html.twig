@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    Test case results
+
+    <hr>
+    {% for test_case in test_cases %}
+        {#{{ test_case.method_name }}#}
+        {{ test_case.input_vector_name }}
+        {{ test_case.event_name }}
+        {#{{ test_case.vector_category_name }}#}
+        {#{{ test_case.test_case_key }}#}
+        {#{{ test_case.record_key }}#}
+        <b>{{ test_case.weight }}</b>
+        <br>
+    {% endfor %}
+{% endblock body %}
+
+{% block javascripts %}
+
+{% endblock javascripts %}

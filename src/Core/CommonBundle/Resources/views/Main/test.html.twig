@@ -2,25 +2,46 @@
 
 {% block body %}
     Test case
-{#Foreach loops for case#}
-    <a id="GSLoPOJ6F8" data-href="{{ path('core_common_test_success') }}" class="a_onclick">Test case</a>
+    <hr>
+
+    {% for test_case in test_cases %}
+        {#{{ test_case.method_name }}#}
+        {#{{ test_case.input_vector_name }}#}
+        {#{{ test_case.event_name }}#}
+        {#{{ test_case.vector_category_name }}#}
+        {#{{ test_case.test_case_key }}#}
+        {#{{ test_case.record_key }}#}
+        {#<br>#}
+
+        <a id="{{ test_case.test_case_key }}_{{ test_case.record_key }}"
+           data-href="{{ path('core_common_test_success') }}"
+           class="{{ test_case.input_vector_name }}_{{ test_case.event_name }}">
+            {{ test_case.input_vector_name }} {{ test_case.event_name }}
+            <br>
+        </a>
+        {#todo : handle all events! Then finished!#}
+
+    {% endfor %}
 {% endblock body %}
 
 {% block javascripts %}
     <script>
-        $(document).on('click','.a_onclick', function () {
+        $(document).on('click','a', function () {
 
-            alert("Tıklandı");
+            console.log("Clicked!");
 
             var element = $(this);
 
             var token = element.attr('id');
+            var event_token = element.attr('class');
             var url = element.attr('data-href');
+
+            var data = 'token=' + token + '&event_token=' + event_token;
 
 
             $.ajax({
                 url: url,
-                data: "test_case_token="+token,
+                data: data,
                 type: 'post',
                 dataType: 'json',
                 success: function(response)

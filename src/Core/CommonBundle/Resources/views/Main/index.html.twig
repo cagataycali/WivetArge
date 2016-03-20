@@ -6,6 +6,40 @@
 
 {% block body %}
 
+    <div class="container col-md-4 col-md-offset-4">
+        <div class="row">
+            Test cases are created please follow the nav link or <a href="{{ path('core_common_test_case') }}">click here</a>
+        </div>
+        <div class="row">
+            See the result's <a href="{{ path('core_common_test_results') }}">click here</a>
+        </div>
+        <div class="row">
+            Or change your session for saw your crawler's activity: :)
+            You'll be redirect test case results!
+        </div>
+        <div class="row">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Switch session <small><i>4U'r crawler</i></small>
+                </div>
+                <div class="panel-body">
+                    <form action="{{ path('core_common_get_token') }}" method="post">
+                        <input type="text" class="form-control" placeholder="PHPSESSID" name="token">
+                        <button type="submit" class="btn btn-success btn-block"><span class="fa fa-external-link "></span> Switch</button>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    <small>
+                        U'r session id : <b style="color: darkred;">{{ phpsessid }}</b>
+                    </small>
+                </div>
+            </div>
+
+        </div>
+    </div>
     {#  :)  #}
+
+
 
 {% endblock body %}
