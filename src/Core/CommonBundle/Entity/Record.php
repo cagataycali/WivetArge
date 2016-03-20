@@ -25,7 +25,7 @@ class Record
     /**
      * @var string
      *
-     * @ORM\Column(name="php_session_id", type="string", length=255)
+     * @ORM\Column(name="php_session_id", type="string", length=255,nullable=true)
      */
     private $phpSessionId;
 

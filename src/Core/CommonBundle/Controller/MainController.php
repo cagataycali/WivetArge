@@ -67,11 +67,13 @@ class MainController extends Controller
 
             //$record_obj -> setId(1);
             $record_obj -> setIpAddress($client_ip);
-            $record_obj -> setPhpSessionId($session->get('PHPSESSID'));
+            $record_obj -> setPhpSessionId($request->cookies->get('PHPSESSID'));
             $record_obj -> setRecordKey($session->getId());
-
             # Set record
             $em->persist($record_obj);
+
+            #todo remove when prod!
+            $em->flush();
 
             $session->set('record',$record_obj);
 
@@ -338,6 +340,8 @@ class MainController extends Controller
         #todo read migrate other session by recordkey.
 
         $session = $request->getSession();
+
+        ob_start();
 
         # The session id isn't yours.
         if ( $session->getId() != $token )

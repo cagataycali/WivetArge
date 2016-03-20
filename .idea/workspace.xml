@@ -783,7 +783,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" afterPath="$PROJECT_DIR$/../meteor/test/.meteor/platforms" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../subdomain-test/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/../subdomain-test/src/Core/CommonBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Gadgets/navbar.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Gadgets/navbar.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php" afterPath="$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php" />
     </list>
     <ignored path="wivet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -805,27 +808,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4">
-              <caret line="340" column="8" selection-start-line="340" selection-start-column="8" selection-end-line="340" selection-end-column="8" />
+            <state vertical-scroll-proportion="-3.116883">
+              <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
               <folding>
                 <element signature="e#48#83#0#PHP" expanded="true" />
-                <element signature="e#8513#8552#1#PHP" expanded="true" />
-                <element signature="e#8566#10202#0#PHP" expanded="false" />
-                <element signature="e#10155#10193#1#PHP" expanded="true" />
-                <element signature="e#12033#12072#1#PHP" expanded="true" />
+                <element signature="e#8584#8623#1#PHP" expanded="true" />
+                <element signature="e#8637#10273#0#PHP" expanded="false" />
+                <element signature="e#10226#10264#1#PHP" expanded="true" />
+                <element signature="e#12117#12156#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
+      <file leaf-file-name="Record.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="272.75">
-              <caret line="763" column="20" selection-start-line="763" selection-start-column="20" selection-end-line="763" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.29587156">
+              <caret line="27" column="81" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/Gadgets/navbar.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -835,7 +848,7 @@
         <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -901,7 +914,6 @@
         <option value="$PROJECT_DIR$/web/assets/js/jquery.js" />
         <option value="$PROJECT_DIR$/web/assets/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/web/assets/font-awesome/css/animation.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Gadgets/navbar.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/Profile.php" />
         <option value="$PROJECT_DIR$/var/logs/dev.log" />
@@ -922,14 +934,15 @@
         <option value="$PROJECT_DIR$/src/Core/CommonBundle/Entity/UserAgent.php" />
         <option value="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCaseMethod.php" />
         <option value="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCaseDescription.php" />
-        <option value="$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php" />
         <option value="$PROJECT_DIR$/src/Core/CommonBundle/Entity/HtmlElement.php" />
-        <option value="$PROJECT_DIR$/src/Core/CommonBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Core/CommonBundle/Entity/Event.php" />
         <option value="$PROJECT_DIR$/src/Core/CommonBundle/Entity/InputVector.php" />
         <option value="$PROJECT_DIR$/var/sessions/dev/sess_f36faf02bb68037a1ffd7674c9b5ac5b" />
         <option value="$PROJECT_DIR$/src/Core/CommonBundle/Entity/TestCase.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Gadgets/navbar.html.twig" />
+        <option value="$PROJECT_DIR$/src/Core/CommonBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php" />
+        <option value="$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php" />
       </list>
     </option>
   </component>
@@ -1203,6 +1216,86 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gadgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wivet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -1216,7 +1309,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Applications/MAMP/htdocs/wivet/src/Core/CommonBundle/Entity/Record.php&#10;FilePP&#9;FILE&#9;file:///Applications/MAMP/htdocs/wivet/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/FileProfilerStorage.php&#10;Profiler&#9;null&#9;null&#10;profl&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="p&#9;FILE&#9;file:///Applications/MAMP/htdocs/wivet/app/config/parameters.yml&#10;FilePP&#9;FILE&#9;file:///Applications/MAMP/htdocs/wivet/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Profiler/FileProfilerStorage.php&#10;Profiler&#9;null&#9;null&#10;profl&#9;null&#9;null" />
     <property name="FullScreen" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
   </component>
@@ -1283,7 +1376,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31502423" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1291,7 +1384,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150685" sideWeight="0.49676898" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33150685" sideWeight="0.49676898" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1574,13 +1667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25641027">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
@@ -1626,34 +1712,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.875">
-          <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/VectorCategory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64772725">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="272.75">
-          <caret line="763" column="20" selection-start-line="763" selection-start-column="20" selection-end-line="763" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/InputVector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-116.25">
-          <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1668,18 +1730,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/HtmlElement.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75">
           <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39130434">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0137615">
+          <caret line="763" column="20" selection-start-line="763" selection-start-column="20" selection-end-line="763" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1692,17 +1762,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/InputVector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-116.25">
+          <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Gadgets/navbar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4">
-          <caret line="340" column="8" selection-start-line="340" selection-start-column="8" selection-end-line="340" selection-end-column="8" />
+        <state vertical-scroll-proportion="-3.116883">
+          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
           <folding>
             <element signature="e#48#83#0#PHP" expanded="true" />
-            <element signature="e#8513#8552#1#PHP" expanded="true" />
-            <element signature="e#8566#10202#0#PHP" expanded="false" />
-            <element signature="e#10155#10193#1#PHP" expanded="true" />
-            <element signature="e#12033#12072#1#PHP" expanded="true" />
+            <element signature="e#8584#8623#1#PHP" expanded="true" />
+            <element signature="e#8637#10273#0#PHP" expanded="false" />
+            <element signature="e#10226#10264#1#PHP" expanded="true" />
+            <element signature="e#12117#12156#1#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/CommonBundle/Entity/Record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29587156">
+          <caret line="27" column="81" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>
