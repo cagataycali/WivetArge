@@ -18,6 +18,8 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new Core\CommonBundle\CoreCommonBundle(),
             new Circle\RestClientBundle\CircleRestClientBundle(),
+            new Sensio\Bundle\BuzzBundle\SensioBuzzBundle(),
+            new Lsw\ApiCallerBundle\LswApiCallerBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

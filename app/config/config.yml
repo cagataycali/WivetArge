@@ -73,3 +73,12 @@ circle_rest_client:
       defaults:
         CURLOPT_HTTPHEADER:     [ 'Content-Type: application/json' ]
         CURLOPT_FOLLOWLOCATION: true
+
+parameters:
+    api_caller.options:
+        timeout: 10  # maximum transport + execution duration of the call in sec.
+        ssl_verifypeer: false  # to stop cURL from verifying the peer's certificate.
+        useragent: "Wivet"  # contents of the "User-Agent: " header.
+        followlocation: true  # to follow any "Location: " header that the server sends.
+        sslversion: 3  # set to 3 to avoid any bugs that relate to automatic version selection.
+        fresh_connect: false  # set to true to force full reconnect every call.
