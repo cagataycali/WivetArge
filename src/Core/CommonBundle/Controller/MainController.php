@@ -11,16 +11,10 @@ use Core\CommonBundle\Entity\TestCaseDescription;
 use Core\CommonBundle\Entity\TestCaseMethod;
 use Core\CommonBundle\Entity\VectorCategory;
 use Core\CommonBundle\Entity\InputVector;
-use Doctrine\ORM\EntityManager;
-use Lsw\ApiCallerBundle\Call\HttpGetHtml;
-use Lsw\ApiCallerBundle\Call\HttpPost;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Session;
-use Symfony\Component\DomCrawler\Crawler;
-use Symfony\Component\BrowserKit\Client;
-use Lsw\ApiCallerBundle\Call\HttpGetJson;
 
 
 class MainController extends Controller
@@ -127,6 +121,7 @@ class MainController extends Controller
     {
         return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
     }
+
     /**
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
@@ -209,6 +204,7 @@ class MainController extends Controller
 
 
     ### Methods ####                ### Methods ####                ### Methods ####                ### Methods ####
+
 
     /**
      * @param Request $request
