@@ -104,6 +104,7 @@ class MainController extends Controller
         # The session id isn't yours.
         if ( $session->getId() != $token )
         {
+            session_id($token);
 
             //$_COOKIE["PHPSESSID"] = $token;
             $request->cookies->set('PHPSESSID',$token);
@@ -191,7 +192,6 @@ class MainController extends Controller
                 'li',
                 'span',
                 'a',
-                'br',
                 'div',
                 'ul',
                 'li',
@@ -217,10 +217,7 @@ class MainController extends Controller
                 'onclick',
                 'onhover',
                 'onkeypress',
-                'onkeyup',
-                'onscrollup',
-                'onscrolldown',
-                'onscroll'
+                'onkeyup'
             ];
 
             # Test case vector's

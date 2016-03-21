@@ -4,7 +4,7 @@
     Test case
     <hr>
 
-    {% for test_case in test_cases %}
+    {% for test_case in test_cases if test_case.method_name == "POST" %}
         {#{{ test_case.method_name }}#}
         {#{{ test_case.input_vector_name }}#}
         {#{{ test_case.event_name }}#}
@@ -13,12 +13,21 @@
         {#{{ test_case.record_key }}#}
         {#<br>#}
 
-        <a id="{{ test_case.test_case_key }}_{{ test_case.record_key }}"
+        <{{ test_case.input_vector_name }} id="{{ test_case.test_case_key }}_{{ test_case.record_key }}"
            data-href="{{ path('core_common_test_success') }}"
-           class="{{ test_case.input_vector_name }}_{{ test_case.event_name }}">
+           class="{{ test_case.input_vector_name }}_{{ test_case.event_name }} {{ test_case.event_name }}">
             {{ test_case.input_vector_name }} {{ test_case.event_name }}
+
+        {% if test_case.event_name == "onkeyup" %}
+            <input type="text" placeholder="On Keyup Test">
+        {% elseif test_case.event_name == "onkeypress" %}
+            <input type="text" placeholder="On Keypress Test">
+
+        {#{% elseif test_case.event_name == "onscroll" %}#}
+            {#<iframe src="http://localhost" frameborder="0"></iframe>#}
+        {% endif %}
             <br>
-        </a>
+        </{{ test_case.input_vector_name }}>
         {#todo : handle all events! Then finished!#}
 
     {% endfor %}
@@ -26,30 +35,49 @@
 
 {% block javascripts %}
     <script>
-        $(document).on('click','a', function () {
 
-            console.log("Clicked!");
-
+        var handle = function () {
             var element = $(this);
 
             var token = element.attr('id');
             var event_token = element.attr('class');
             var url = element.attr('data-href');
 
-            var data = 'token=' + token + '&event_token=' + event_token;
+            console.log(event_token);
 
+            var data = 'token=' + token + '&event_token=' + event_token;
 
             $.ajax({
                 url: url,
                 data: data,
                 type: 'post',
                 dataType: 'json',
-                success: function(response)
-                {
+                success: function (response) {
                     console.log(response);
                 }
             });
+        };
 
+        $(document).on('click','.onclick', function () {
+            handle.call(this);
         });
+
+        $(document).on('mouseover','.onhover', function () {
+            handle.call(this);
+        });
+
+        $(document).on('keyup','.onkeyup', function () {
+            handle.call(this);
+        });
+        $(document).on('keypress','.onkeypress', function () {
+            handle.call(this);
+        });
+
+        $(window).on('scroll','.onscroll', function () {
+            handle.call(this);
+        });
+
+
+
     </script>
 {% endblock javascripts %}
