@@ -105,14 +105,9 @@ class MainController extends Controller
         if ( $session->getId() != $token )
         {
 
-            # But no problem dude,I'll change!
-            session_id($token);
-
-            # Clear the other session!
-            session_regenerate_id(true);
-
-            # Then change header
+            //$_COOKIE["PHPSESSID"] = $token;
             $request->cookies->set('PHPSESSID',$token);
+            # Then change header
         }
 
         return $request->cookies->get('PHPSESSID');
