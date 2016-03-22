@@ -89,10 +89,6 @@ class TestCase
     public function updatedTimestamps()
     {
 
-        if($this->getFirstClickedAt() == null)
-        {
-            $this->setFirstClickedAt(new \DateTime(date('d-m-Y H:i:s')));
-        }
         if($this->getLastClickedAt() == null)
         {
             $this->setLastClickedAt(new \DateTime(date('d-m-Y H:i:s')));

@@ -173,7 +173,12 @@ class MainController extends Controller
                 $response["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
                 $response["weight"] = $test_case_obj_session->getWeight();
 
+//                $test_case_obj_session = new TestCase();
 
+                if($test_case_obj_session->getClickCount() == 0)
+                {
+                    $test_case_obj_session->setFirstClickedAt(new \DateTime("now"));
+                }
 
                 $click_count = $test_case_obj_session->getClickCount() + 1;
                 $test_case_obj_session->setClickCount($click_count);
