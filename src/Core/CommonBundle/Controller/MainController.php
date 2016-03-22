@@ -21,106 +21,7 @@ class MainController extends Controller
 {
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
 
-    /**
-     * @param Request $request
-     * @return array
-     */
-    function testCases(Request $request)
-    {
-        list($session, $test_case_obj_count) = $this->testCaseCount($request);
-        //$test_case_obj_count = 447;
 
-        $test_cases_array = array();
-
-        # Collect all test inputs
-        for ($i = 0; $i < $test_case_obj_count + 1; $i++) {
-            $test_case_obj_session = $session->get('test_case_' . $i);
-
-            $test_cases_array[$i]["id"] = $test_case_obj_session->getId();
-            $test_cases_array[$i]["method_name"] = $test_case_obj_session->getMethod()->getName();
-            $test_cases_array[$i]["input_vector_name"] = $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
-            $test_cases_array[$i]["event_name"] = $test_case_obj_session->getInputVector()->getEvent()->getName();
-            $test_cases_array[$i]["vector_category_name"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
-            $test_cases_array[$i]["test_case_key"] = $test_case_obj_session->getKey();
-            $test_cases_array[$i]["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
-            $test_cases_array[$i]["weight"] = $test_case_obj_session->getWeight();
-            #todo : click'll change weight
-            #todo : timestamp
-            #todo : firstClickDate
-            #todo : lastClickDate
-        }
-        return $test_cases_array;
-    }
-
-    /**
-     * @param Request $request
-     * @return array
-     */
-    public function getTestCases(Request $request)
-    {
-        $test_cases_array = $this->testCases($request);
-
-        return $test_cases_array;
-    }
-
-    /**
-     * @param Request $request
-     * @param $record_key
-     * @param $test_case_key
-     * @return array
-     */
-    public function getTestCaseSuccess(Request $request,$record_key,$test_case_key)
-    {
-        list($session, $test_case_obj_count) = $this->testCaseCount($request);
-
-        $response = $this->testCaseSuccess($record_key, $test_case_key, $test_case_obj_count, $session);
-
-        return $response;
-    }
-
-//    todo : migrate session doesn't working properly
-    /**
-     * @param Request $request
-     * @param $token
-     * @return mixed
-     */
-    function migrateSession(Request $request,$token)
-    {
-
-        $session = $request->getSession();
-
-        ob_start();
-
-        # The session id isn't yours.
-        if ( $session->getId() != $token )
-        {
-            session_id($token);
-
-            //$_COOKIE["PHPSESSID"] = $token;
-            $request->cookies->set('PHPSESSID',$token);
-            # Then change header
-        }
-
-        return $request->cookies->get('PHPSESSID');
-    }
-
-    /**
-     * @param $record_obj
-     */
-    function sendRequest($record_obj)
-    {
-        $array = array();
-
-        //$output = $this->get('api_caller')->call(new HttpGetJson("http://localhost/hacking/web/app_dev.php/".$record_obj->getIpAddress(), $array));
-
-        # todo : ?
-    }
-
-    # Generate Random string
-    function generateRandomString($length = 10)
-    {
-        return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
-    }
 
     /**
      * @param Request $request
@@ -250,10 +151,11 @@ class MainController extends Controller
                 $response["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
                 $response["weight"] = $test_case_obj_session->getWeight();
 
-                $weight = $test_case_obj_session->getWeight() + 1;
-                $test_case_obj_session->setWeight($weight);
+                $weight = $test_case_obj_session->getClickCount() + 1;
+                $test_case_obj_session->setClickCount($weight);
 
                 $response["weight"] = $test_case_obj_session->getWeight();
+                $response["click_count"] = $test_case_obj_session->getClickCount();
             }
         }
         return $response;
@@ -360,15 +262,8 @@ class MainController extends Controller
              */
             $test_case_id = 0;
 
-            # If there isn't any record
-            $record_obj = new Record();
+            $record_obj = $this->setRecordObj($request, $session, $em, $client_ip);
 
-            //$record_obj -> setId(1);
-            $record_obj->setIpAddress($client_ip);
-            $record_obj->setPhpSessionId($request->cookies->get('PHPSESSID'));
-            $record_obj->setRecordKey($session->getId());
-            # Set record
-            $em->persist($record_obj);
 
             $session->set('record', $record_obj);
 
@@ -387,52 +282,27 @@ class MainController extends Controller
             # Test case vector's
             foreach ($test_case_vector_categorys as $vector_category_key => $test_case_vector_category) {
 
-                $test_case_vector_category_obj = new VectorCategory();
-                //$test_case_vector_category_obj ->setId($vector_category_key);
-                $test_case_vector_category_obj->setName($test_case_vector_category);
-
-                $em->persist($test_case_vector_category_obj);
-
+                $test_case_vector_category_obj = $this->setVectorCategoryObj($em, $test_case_vector_category);
 
                 # Test case html element's
                 foreach ($test_case_html_elements as $html_element_key => $test_case_html_element) {
 
-                    $test_case_html_element_obj = new HtmlElement();
-                    //$test_case_html_element_obj ->setId($html_element_key);
-                    $test_case_html_element_obj->setName($test_case_html_element);
-
-                    $em->persist($test_case_html_element_obj);
+                    $test_case_html_element_obj = $this->setTestCaseHtmlElementObj($em, $test_case_html_element);
 
 
                     # Test case event's
                     foreach ($test_case_events as $event_key => $test_case_event) {
 
-                        $test_case_event_obj = new Event();
-                        // $test_case_event_obj ->setId($event_key);
-                        $test_case_event_obj->setName($test_case_event);
-
-                        $em->persist($test_case_event_obj);
+                        $test_case_event_obj = $this->setTestCaseEventObj($em, $test_case_event);
 
 
-                        $test_case_input_vector_obj = new InputVector();
-                        //$test_case_input_vector_obj ->setId($html_element_key);
-                        $test_case_input_vector_obj->setEvent($test_case_event_obj);
-                        $test_case_input_vector_obj->setHtmlElement($test_case_html_element_obj);
-                        $test_case_input_vector_obj->setVectorCategory($test_case_vector_category_obj);
-
-
-                        $em->persist($test_case_input_vector_obj);
+                        $test_case_input_vector_obj = $this->setTestCaseInputVectorObj($em, $test_case_event_obj, $test_case_html_element_obj, $test_case_vector_category_obj);
 
 
                         # Test case method's
                         foreach ($test_case_methods as $method_key => $test_case_method) {
 
-                            # Test case request method obj
-                            $test_case_method_obj = new TestCaseMethod();
-                            //$test_case_method_obj ->setId($method_key);
-                            $test_case_method_obj->setName($test_case_method);
-
-                            $em->persist($test_case_method_obj);
+                            $test_case_method_obj = $this->setTestCaseMethodObj($em, $test_case_method);
 
 
 //                            # Test case description's
@@ -451,17 +321,7 @@ class MainController extends Controller
 
                             $rand_string = $this->generateRandomString();
 
-                            $test_case = new TestCase();
-                            //$test_case -> setId($test_case_id++); # Count will inrease after set operation
-                            //$test_case -> setTestCaseDescription($test_case_description_obj);
-                            $test_case->setInputVector($test_case_input_vector_obj);
-                            $test_case->setMethod($test_case_method_obj);
-                            $test_case->setRecord($record_obj);
-                            $test_case->setKey($rand_string);
-                            $test_case->setWeight(0);
-
-
-                            $em->persist($test_case);
+                            $test_case = $this->setTestCase($em, $test_case_input_vector_obj, $test_case_method_obj, $record_obj, $rand_string);
 
                             $session->set('test_case_' . $test_case_id, $test_case);
 
@@ -482,5 +342,244 @@ class MainController extends Controller
             $this->sendRequest($record_obj);
 
         } # Endif
+    }
+
+    /**
+     * @param $em
+     * @param $test_case_vector_category
+     * @return VectorCategory
+     */
+    function setVectorCategoryObj($em, $test_case_vector_category)
+    {
+        $test_case_vector_category_obj = new VectorCategory();
+        //$test_case_vector_category_obj ->setId($vector_category_key);
+        $test_case_vector_category_obj->setName($test_case_vector_category);
+
+        $em->persist($test_case_vector_category_obj);
+        return $test_case_vector_category_obj;
+    }
+
+    /**
+     * @param $em
+     * @param $test_case_html_element
+     * @return HtmlElement
+     */
+    function setTestCaseHtmlElementObj($em, $test_case_html_element)
+    {
+        $test_case_html_element_obj = new HtmlElement();
+        //$test_case_html_element_obj ->setId($html_element_key);
+        $test_case_html_element_obj->setName($test_case_html_element);
+
+        $em->persist($test_case_html_element_obj);
+        return $test_case_html_element_obj;
+    }
+
+    /**
+     * @param $em
+     * @param $test_case_event
+     * @return Event
+     */
+    function setTestCaseEventObj($em, $test_case_event)
+    {
+        $test_case_event_obj = new Event();
+        // $test_case_event_obj ->setId($event_key);
+        $test_case_event_obj->setName($test_case_event);
+
+        $em->persist($test_case_event_obj);
+        return $test_case_event_obj;
+    }
+
+    /**
+     * @param $em
+     * @param $test_case_event_obj
+     * @param $test_case_html_element_obj
+     * @param $test_case_vector_category_obj
+     * @return InputVector
+     */
+    function setTestCaseInputVectorObj($em, $test_case_event_obj, $test_case_html_element_obj, $test_case_vector_category_obj)
+    {
+        $test_case_input_vector_obj = new InputVector();
+        //$test_case_input_vector_obj ->setId($html_element_key);
+        $test_case_input_vector_obj->setEvent($test_case_event_obj);
+        $test_case_input_vector_obj->setHtmlElement($test_case_html_element_obj);
+        $test_case_input_vector_obj->setVectorCategory($test_case_vector_category_obj);
+
+
+        $em->persist($test_case_input_vector_obj);
+        return $test_case_input_vector_obj;
+    }
+
+    /**
+     * @param $em
+     * @param $test_case_method
+     * @return TestCaseMethod
+     */
+    function setTestCaseMethodObj($em, $test_case_method)
+    {
+# Test case request method obj
+        $test_case_method_obj = new TestCaseMethod();
+        //$test_case_method_obj ->setId($method_key);
+        $test_case_method_obj->setName($test_case_method);
+
+        $em->persist($test_case_method_obj);
+        return $test_case_method_obj;
+    }
+
+    /**
+     * @param $em
+     * @param $test_case_input_vector_obj
+     * @param $test_case_method_obj
+     * @param $record_obj
+     * @param $rand_string
+     * @return TestCase
+     */
+    function setTestCase($em, $test_case_input_vector_obj, $test_case_method_obj, $record_obj, $rand_string)
+    {
+        $test_case = new TestCase();
+        //$test_case -> setId($test_case_id++); # Count will inrease after set operation
+        //$test_case -> setTestCaseDescription($test_case_description_obj);
+        $test_case->setInputVector($test_case_input_vector_obj);
+        $test_case->setMethod($test_case_method_obj);
+        $test_case->setRecord($record_obj);
+        $test_case->setKey($rand_string);
+        $test_case->setWeight(0);
+
+
+        $em->persist($test_case);
+        return $test_case;
+    }
+
+    /**
+     * @param Request $request
+     * @param $session
+     * @param $em
+     * @param $client_ip
+     * @return Record
+     */
+    function setRecordObj(Request $request, $session, $em, $client_ip)
+    {
+    # If there isn't any record
+        $record_obj = new Record();
+
+        //$record_obj -> setId(1);
+        $record_obj->setIpAddress($client_ip);
+        $record_obj->setPhpSessionId($request->cookies->get('PHPSESSID'));
+        $record_obj->setRecordKey($session->getId());
+        # Set record
+        $em->persist($record_obj);
+        return $record_obj;
+    }
+
+    /**
+     * @param Request $request
+     * @return array
+     */
+    function testCases(Request $request)
+    {
+        list($session, $test_case_obj_count) = $this->testCaseCount($request);
+        //$test_case_obj_count = 447;
+
+        $test_cases_array = array();
+
+        # Collect all test inputs
+        for ($i = 0; $i < $test_case_obj_count + 1; $i++) {
+            $test_case_obj_session = $session->get('test_case_' . $i);
+
+            $test_cases_array[$i]["id"] = $test_case_obj_session->getId();
+            $test_cases_array[$i]["method_name"] = $test_case_obj_session->getMethod()->getName();
+            $test_cases_array[$i]["input_vector_name"] = $test_case_obj_session->getInputVector()->getHtmlElement()->getName();
+            $test_cases_array[$i]["event_name"] = $test_case_obj_session->getInputVector()->getEvent()->getName();
+            $test_cases_array[$i]["vector_category_name"] = $test_case_obj_session->getInputVector()->getVectorCategory()->getName();
+            $test_cases_array[$i]["test_case_key"] = $test_case_obj_session->getKey();
+            $test_cases_array[$i]["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
+            $test_cases_array[$i]["weight"] = $test_case_obj_session->getWeight();
+            $test_cases_array[$i]["click_count"] = $test_case_obj_session->getClickCount();
+            #todo : click'll change weight
+            #todo : timestamp
+            #todo : firstClickDate
+            #todo : lastClickDate
+        }
+        return $test_cases_array;
+    }
+
+    /**
+     * @param Request $request
+     * @return array
+     */
+    public function getTestCases(Request $request)
+    {
+        $test_cases_array = $this->testCases($request);
+
+        return $test_cases_array;
+    }
+
+    /**
+     * @param Request $request
+     * @param $record_key
+     * @param $test_case_key
+     * @return array
+     */
+    public function getTestCaseSuccess(Request $request,$record_key,$test_case_key)
+    {
+        list($session, $test_case_obj_count) = $this->testCaseCount($request);
+
+        $response = $this->testCaseSuccess($record_key, $test_case_key, $test_case_obj_count, $session);
+
+        return $response;
+    }
+
+//    todo : migrate session doesn't working properly
+    /**
+     * @param Request $request
+     * @param $token
+     * @return mixed
+     */
+    function migrateSession(Request $request,$token)
+    {
+
+        $session = $request->getSession();
+
+        ob_start();
+
+        # The session id isn't yours.
+        if ( $session->getId() != $token )
+        {
+            # Destroy session
+            session_destroy();
+
+            # Set session
+            session_id($token);
+
+            # Regenerate invalid
+            session_regenerate_id(false);
+
+            # Session start
+
+            session_start();
+            # Then change header
+            $request->cookies->set('PHPSESSID',$token);
+
+        }
+
+
+        return $request->cookies->get('PHPSESSID');
+    }
+
+    /**
+     * @param $record_obj
+     */
+    function sendRequest($record_obj)
+    {
+        $array = array();
+
+        //$output = $this->get('api_caller')->call(new HttpGetJson("http://localhost/hacking/web/app_dev.php/".$record_obj->getIpAddress(), $array));
+
+        # todo : ?
+    }
+
+    # Generate Random string
+    function generateRandomString($length = 10)
+    {
+        return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
     }
 }

@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="test_cases")
  * @ORM\Entity(repositoryClass="Core\CommonBundle\Repository\TestCaseRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class TestCase
 {
@@ -54,10 +55,55 @@ class TestCase
     /**
      * @var int
      *
-     * @ORM\Column(name="weight", type="integer")
+     * @ORM\Column(name="weight", type="integer", nullable=true)
      */
     private $weight;
 
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="click_count", type="integer", nullable=true)
+     */
+    private $clickCount;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="firstClickedAt", type="datetime", nullable=true)
+     */
+    private $firstClickedAt;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="lastClickedAt", type="datetime", nullable=true)
+     */
+    private $lastClickedAt;
+
+    /**
+     * Now we tell doctrine that before we persist or update we call the updatedTimestamps() function.
+     *
+     * @ORM\PrePersist
+     * @ORM\PreUpdate
+     */
+    public function updatedTimestamps()
+    {
+        $this->setLastClickedAt(new \DateTime(date('d-m-Y H:i:s')));
+
+        if($this->getFirstClickedAt() == null)
+        {
+            $this->setFirstClickedAt(new \DateTime(date('d-m-Y H:i:s')));
+        }
+        if($this->getClickCount() == null)
+        {
+            $this->setClickCount(0);
+        }
+    }
+
+    public function __toString()
+    {
+        return (string) $this->getClickCount();
+    }
 
 
     /**
@@ -116,6 +162,78 @@ class TestCase
     public function getWeight()
     {
         return $this->weight;
+    }
+
+    /**
+     * Set clickCount
+     *
+     * @param integer $clickCount
+     *
+     * @return TestCase
+     */
+    public function setClickCount($clickCount)
+    {
+        $this->clickCount = $clickCount;
+
+        return $this;
+    }
+
+    /**
+     * Get clickCount
+     *
+     * @return integer
+     */
+    public function getClickCount()
+    {
+        return $this->clickCount;
+    }
+
+    /**
+     * Set firstClickedAt
+     *
+     * @param \DateTime $firstClickedAt
+     *
+     * @return TestCase
+     */
+    public function setFirstClickedAt($firstClickedAt)
+    {
+        $this->firstClickedAt = $firstClickedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get firstClickedAt
+     *
+     * @return \DateTime
+     */
+    public function getFirstClickedAt()
+    {
+        return $this->firstClickedAt;
+    }
+
+    /**
+     * Set lastClickedAt
+     *
+     * @param \DateTime $lastClickedAt
+     *
+     * @return TestCase
+     */
+    public function setLastClickedAt($lastClickedAt)
+    {
+        $this->lastClickedAt = $lastClickedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get lastClickedAt
+     *
+     * @return \DateTime
+     */
+    public function getLastClickedAt()
+    {
+        return $this->lastClickedAt;
     }
 
     /**

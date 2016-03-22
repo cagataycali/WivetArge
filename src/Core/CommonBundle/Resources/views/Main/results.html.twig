@@ -4,7 +4,7 @@
     Test case results
 
     <hr>
-    {% for test_case in test_cases %}
+    {% for test_case in test_cases if test_case.method_name == "POST" %}
         {#{{ test_case.method_name }}#}
         {{ test_case.input_vector_name }}
         {{ test_case.event_name }}
@@ -12,6 +12,7 @@
         {#{{ test_case.test_case_key }}#}
         {#{{ test_case.record_key }}#}
         <b>{{ test_case.weight }}</b>
+        <b>{{ test_case.click_count }}</b>
         <br>
     {% endfor %}
 {% endblock body %}
