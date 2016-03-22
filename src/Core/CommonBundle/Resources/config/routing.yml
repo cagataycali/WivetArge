@@ -17,3 +17,13 @@ core_common_test_success:
 core_common_test_results:
     path:     /test-case/results/
     defaults: { _controller: CoreCommonBundle:Main:results }
+
+core_common_test_results_streamed:
+    path:     /test-case/results/stream
+    defaults: { _controller: CoreCommonBundle:Main:streamedResults }
+
+
+core_common_test_results_api:
+    path:     /api/{token}
+    defaults: { _controller: CoreCommonBundle:Main:getTestCasesApi }
+

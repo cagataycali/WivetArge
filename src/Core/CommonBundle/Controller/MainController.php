@@ -14,7 +14,9 @@ use Core\CommonBundle\Entity\InputVector;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 
 class MainController extends Controller
@@ -22,6 +24,18 @@ class MainController extends Controller
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
 
 
+    /**
+     * @param Request $request
+     * @param $token
+     * @return JsonResponse
+     */
+    public function getTestCasesApiAction(Request $request,$token)
+    {
+        # Migrate session
+        $this->migrateSession($request,$token);
+
+        return new JsonResponse($this->getTestCases($request));
+    }
 
     /**
      * @param Request $request
@@ -103,6 +117,11 @@ class MainController extends Controller
         return $this->render('CoreCommonBundle:Main:results.html.twig',array('test_cases'=>$this->getTestCases($request)));
     }
 
+    public function streamedResultsAction(Request $request)
+    {
+        return new JsonResponse($this->getTestCases($request));
+    }
+
 
     ### Methods ####                ### Methods ####                ### Methods ####                ### Methods ####
 
@@ -130,6 +149,9 @@ class MainController extends Controller
      */
     function testCaseSuccess($record_key, $test_case_key, $test_case_obj_count, $session)
     {
+
+        $time_bundle = $this->getTimeBundle();
+
         $response = array();
 
         for ($i = 0; $i < $test_case_obj_count + 1; $i++) {
@@ -151,11 +173,15 @@ class MainController extends Controller
                 $response["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
                 $response["weight"] = $test_case_obj_session->getWeight();
 
-                $weight = $test_case_obj_session->getClickCount() + 1;
-                $test_case_obj_session->setClickCount($weight);
 
-                $response["weight"] = $test_case_obj_session->getWeight();
+
+                $click_count = $test_case_obj_session->getClickCount() + 1;
+                $test_case_obj_session->setClickCount($click_count);
+                $test_case_obj_session->setLastClickedAt(new \DateTime("now"));
+
                 $response["click_count"] = $test_case_obj_session->getClickCount();
+                $response["first_click"] = $time_bundle->diff($test_case_obj_session->getFirstClickedAt());
+                $response["last_click"] = $time_bundle->diff( $test_case_obj_session->getLastClickedAt());
             }
         }
         return $response;
@@ -476,6 +502,9 @@ class MainController extends Controller
      */
     function testCases(Request $request)
     {
+        $time_bundle = $this->getTimeBundle();
+
+
         list($session, $test_case_obj_count) = $this->testCaseCount($request);
         //$test_case_obj_count = 447;
 
@@ -494,10 +523,9 @@ class MainController extends Controller
             $test_cases_array[$i]["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
             $test_cases_array[$i]["weight"] = $test_case_obj_session->getWeight();
             $test_cases_array[$i]["click_count"] = $test_case_obj_session->getClickCount();
-            #todo : click'll change weight
-            #todo : timestamp
-            #todo : firstClickDate
-            #todo : lastClickDate
+            $test_cases_array[$i]["first_click"] = $time_bundle->diff($test_case_obj_session->getFirstClickedAt());
+            $test_cases_array[$i]["last_click"] = $time_bundle->diff( $test_case_obj_session->getLastClickedAt());
+
         }
         return $test_cases_array;
     }
@@ -506,12 +534,13 @@ class MainController extends Controller
      * @param Request $request
      * @return array
      */
-    public function getTestCases(Request $request)
+    function getTestCases(Request $request)
     {
         $test_cases_array = $this->testCases($request);
 
         return $test_cases_array;
     }
+
 
     /**
      * @param Request $request
@@ -581,5 +610,17 @@ class MainController extends Controller
     function generateRandomString($length = 10)
     {
         return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, $length);
+    }
+
+    /**
+     * @return mixed
+     */
+    function getTimeBundle()
+    {
+        /**
+         * Time ago eklentisini kullanabilmek için.
+         */
+        $time_bundle = $this->container->get('time.templating.helper.time');
+        return $time_bundle;
     }
 }

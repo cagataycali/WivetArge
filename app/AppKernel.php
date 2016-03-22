@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Circle\RestClientBundle\CircleRestClientBundle(),
             new Sensio\Bundle\BuzzBundle\SensioBuzzBundle(),
             new Lsw\ApiCallerBundle\LswApiCallerBundle(),
+            new Knp\Bundle\TimeBundle\KnpTimeBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

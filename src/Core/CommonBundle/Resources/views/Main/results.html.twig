@@ -4,19 +4,85 @@
     Test case results
 
     <hr>
-    {% for test_case in test_cases if test_case.method_name == "POST" %}
-        {#{{ test_case.method_name }}#}
-        {{ test_case.input_vector_name }}
-        {{ test_case.event_name }}
-        {#{{ test_case.vector_category_name }}#}
-        {#{{ test_case.test_case_key }}#}
-        {#{{ test_case.record_key }}#}
-        <b>{{ test_case.weight }}</b>
-        <b>{{ test_case.click_count }}</b>
-        <br>
-    {% endfor %}
+    <ul>
+        <small>* Only reached!</small>
+        {% for test_case in test_cases if test_case.method_name == "POST" and test_case.click_count > 0 %}
+
+            <li>
+                {{ test_case.input_vector_name }} -  {{ test_case.event_name }}
+
+            </li>
+            <li>
+                <b>Time reach : {{ test_case.click_count }}</b>
+            </li>
+            <li>
+                <b>First reach : {{ test_case.first_click }}</b>
+            </li>
+            <li>
+                <b>Last reach : {{ test_case.last_click }}</b>
+            </li>
+            {#{{ test_case.vector_category_name }}#}
+            {#{{ test_case.test_case_key }}#}
+            {#{{ test_case.record_key }}#}
+            {#<b>{{ test_case.weight }}</b>#}
+
+            <br>
+        {% endfor %}
+    </ul>
+
+
+    {# Streamed response #}
+    {#<a data-href="{{ path('core_common_test_results_streamed') }}" id="url">URL</a>#}
+    {# Streamed response #}
+
+    <hr>
+
+    <div class="data">
+        <ul class="data"></ul>
+    </div>
 {% endblock body %}
 
 {% block javascripts %}
+
+    <script>
+
+
+        $(document).on('click','#url', function () {
+
+            console.log("Buradayım");
+
+            var url = $(this).attr('data-href');
+            oboe(url)
+                    .done(function(response) {
+
+                        console.log(response.id);
+
+
+                        $.each( response, function( key, value ) {
+
+                            if (value.method_name == "POST")
+                            {
+                                $('.data').append(
+                                        value.input_vector_name + " " +
+                                        value.event_name + " " +
+                                        value.click_count + " "
+                                        +"<br>"
+                                );
+                            }
+
+                           // console.log( key + ": " + value.method_name );
+                        });
+
+
+
+                    })
+                    .fail(function() {
+
+                        // we don't got it
+                    });
+        });
+
+
+    </script>
 
 {% endblock javascripts %}

@@ -30,7 +30,8 @@
         "ci/restclientbundle": "^1.0",
         "fabpot/goutte": "^3.1",
         "sensio/buzz-bundle": "dev-master",
-        "leaseweb/api-caller-bundle": "*"
+        "leaseweb/api-caller-bundle": "*",
+        "knplabs/knp-time-bundle": "^1.5"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
