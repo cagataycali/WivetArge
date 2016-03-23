@@ -26,7 +26,7 @@ class MainController extends Controller
 
     public function helloAction(Request $request)
     {
-        return "Merhaba dünya!";
+        return new Response( "Merhaba dünya!");
     }
 
     /**
