@@ -24,10 +24,9 @@ class MainController extends Controller
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
 
 
-    public function helloAction(Request $request,$token)
+    public function helloAction($token)
     {
-        $response = "Merhaba $token";
-        return new Response($response);
+        return new Response($token);
     }
 
     /**

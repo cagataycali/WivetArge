@@ -28,5 +28,5 @@ core_common_test_results_api:
     defaults: { _controller: CoreCommonBundle:Main:getTestCasesApi }
 
 core_hello:
-    path:     /api/{token}
+    path:     /code/{token}
     defaults: { _controller: CoreCommonBundle:Main:Hello }
