@@ -24,6 +24,11 @@ class MainController extends Controller
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
 
 
+    public function helloAction(Request $request)
+    {
+        return "Merhaba dünya!";
+    }
+
     /**
      * @param Request $request
      * @param $token
