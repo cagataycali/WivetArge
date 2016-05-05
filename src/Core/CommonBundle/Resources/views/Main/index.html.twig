@@ -56,10 +56,6 @@
 
     </div>
 
-    <div class="container" id="gelir">
-
-    </div>
-
 
     {#  :)  #}
 
@@ -163,51 +159,6 @@
 
         $(function () {
             t();
-        });
-    </script>
-
-    <script>
-        $(function () {
-            $('#gelir').highcharts({
-                title: {
-                    text: 'Gelir - Gider Grafiği'
-                },
-                xAxis: {
-                    categories: ['Aralık', 'Ocak', 'Şubat', 'Mart', 'Nisan']
-                },
-                labels: {
-                    items: [{
-                        html: 'Bakiye',
-                        style: {
-                            left: '50px',
-                            top: '18px',
-                            color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
-                        }
-                    }]
-                },
-                series: [{
-                    type: 'column',
-                    name: 'Eğlence',
-                    data: [300, 200, 500, 300, 400]
-                }, {
-                    type: 'column',
-                    name: 'Fatura',
-                    data: [300, 200, 500, 300, 400]
-                }, {
-                    type: 'column',
-                    name: 'Ev harcaması',
-                    data: [300, 200,900, 300, 400]
-                }, {
-                    type: 'spline',
-                    name: 'Bakiye',
-                    data: [400, 200, 600, 400, 400],
-                    marker: {
-                        lineWidth: 2,
-                        lineColor: Highcharts.getOptions().colors[3],
-                        fillColor: 'white'
-                    }
-                }]
-            });
         });
     </script>
 
