@@ -29,6 +29,13 @@ class TestCase
     private $key;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="special", type="string", length=255)
+     */
+    private $special;
+
+    /**
      * @ORM\ManyToOne(targetEntity="Record", inversedBy="test_cases")
      * @ORM\JoinColumn(name="record_id", referencedColumnName="id", onDelete="CASCADE")
      */
@@ -102,6 +109,20 @@ class TestCase
     public function __toString()
     {
         return (string) $this->getClickCount();
+    }
+
+    /**
+     * Set id
+     *
+     * @param integer $id
+     *
+     * @return Record
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
     }
 
 
@@ -329,5 +350,29 @@ class TestCase
     public function getInputVector()
     {
         return $this->input_vector;
+    }
+
+    /**
+     * Set special
+     *
+     * @param string $special
+     *
+     * @return TestCase
+     */
+    public function setSpecial($special)
+    {
+        $this->special = $special;
+
+        return $this;
+    }
+
+    /**
+     * Get special
+     *
+     * @return string
+     */
+    public function getSpecial()
+    {
+        return $this->special;
     }
 }

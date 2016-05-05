@@ -24,17 +24,23 @@ class MainController extends Controller
 //find($ip, $url, $limit, $method, $start, $end, $phpsessionid)
 
 
-    public function helloAction($token)
-    {
-        return new Response($token);
-    }
-
     /**
      * @param Request $request
      * @param $token
      * @return JsonResponse
      */
     public function getTestCasesApiAction(Request $request,$token)
+    {
+        return new JsonResponse($this->getTestCases($request));
+    }
+
+    /**
+     * @param Request $request
+     * @param $token
+     * @return JsonResponse
+     * This method working for external users.
+     */
+    public function externalTestCasesApiAction(Request $request, $token)
     {
         # Migrate session
         $this->migrateSession($request,$token);
@@ -120,11 +126,6 @@ class MainController extends Controller
     public function resultsAction(Request $request)
     {
         return $this->render('CoreCommonBundle:Main:results.html.twig',array('test_cases'=>$this->getTestCases($request)));
-    }
-
-    public function streamedResultsAction(Request $request)
-    {
-        return new JsonResponse($this->getTestCases($request));
     }
 
 
@@ -243,7 +244,8 @@ class MainController extends Controller
             'h6',
             'small',
             'i',
-            'b'
+            'b',
+            'strong'
         ];
         return $test_case_html_elements;
     }
@@ -271,7 +273,8 @@ class MainController extends Controller
             'onclick',
             'onhover',
             'onkeypress',
-            'onkeyup'
+            'onkeyup',
+            'onmouseout'
         ];
         return $test_case_events;
     }
@@ -479,11 +482,14 @@ class MainController extends Controller
         $test_case->setRecord($record_obj);
         $test_case->setKey($rand_string);
         $test_case->setWeight(0);
+        $test_case->setSpecial(0);
 
 
         $em->persist($test_case);
         return $test_case;
     }
+
+
 
     /**
      * @param Request $request
@@ -533,6 +539,7 @@ class MainController extends Controller
             $test_cases_array[$i]["record_key"] = $test_case_obj_session->getRecord()->getRecordKey();
             $test_cases_array[$i]["weight"] = $test_case_obj_session->getWeight();
             $test_cases_array[$i]["click_count"] = $test_case_obj_session->getClickCount();
+            $test_cases_array[$i]["special"] = $test_case_obj_session->getSpecial();
             $test_cases_array[$i]["first_click"] = $time_bundle->diff($test_case_obj_session->getFirstClickedAt());
             $test_cases_array[$i]["last_click"] = $time_bundle->diff( $test_case_obj_session->getLastClickedAt());
 

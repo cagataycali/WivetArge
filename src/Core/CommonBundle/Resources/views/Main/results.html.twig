@@ -6,7 +6,7 @@
     <hr>
     <ul>
         <small>* Only reached!</small>
-        {% for test_case in test_cases if test_case.method_name == "POST" and test_case.click_count > 0 %}
+        {% for test_case in test_cases if test_case.method_name == "POST" and test_case.click_count > 0 and test_case.special == 0 %}
 
             <li>
                 {{ test_case.input_vector_name }} -  {{ test_case.event_name }}

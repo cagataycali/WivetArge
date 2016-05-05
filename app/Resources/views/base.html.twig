@@ -19,9 +19,10 @@
         {% include ':Gadgets:navbar.html.twig' %}
 
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
 
         <script src="{{ asset('assets/js/bootstrap.js') }}"></script>
         <script src="{{ asset('assets/js/oboe-browser.js') }}"></script>
+        {% block javascripts %}{% endblock %}
     </body>
 </html>

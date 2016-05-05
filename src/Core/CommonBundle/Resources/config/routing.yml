@@ -18,15 +18,16 @@ core_common_test_results:
     path:     /test-case/results/
     defaults: { _controller: CoreCommonBundle:Main:results }
 
-core_common_test_results_streamed:
-    path:     /test-case/results/stream
-    defaults: { _controller: CoreCommonBundle:Main:streamedResults }
-
-
+#Dont migrate the session
 core_common_test_results_api:
     path:     /api/{token}
     defaults: { _controller: CoreCommonBundle:Main:getTestCasesApi }
 
-core_hello:
-    path:     /code/{token}
-    defaults: { _controller: CoreCommonBundle:Main:Hello }
+#Migrate the session
+core_common_test_results_external_api:
+    path:     /api/external/{token}
+    defaults: { _controller: CoreCommonBundle:Main:externalTestCasesApi }
+
+core_common_set_special_test_case:
+    path:     /special-test-case/
+    defaults: { _controller: CoreCommonBundle:SpecialTestCase:setSpecialTestCase }
