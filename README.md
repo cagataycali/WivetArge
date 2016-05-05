@@ -15,17 +15,17 @@ git pull origin https://github.com/ccali14/WivetArge.git
 Step 3;
 --------
 cd /path/your/localhost/dir
-mv app/config/parameters.yml.dist app/config/parameters.yml && vi app/config/parameters.yml 
-
+mv app/config/parameters.yml.dist app/config/parameters.yml && vi app/config/parameters.yml && touch app/config/parameters.yml.dist 
 # Then config yourself!
 
-## In Terminal:
-php bin/console do:db:cr && php bin/console do:sc:up -f
-
-Step 4;
 --------
 ## In Terminal:
 php composer.phar update
+
+Step 4;
+## In Terminal:
+php bin/console do:db:cr && php bin/console do:sc:up -f
+
 
 
 Conclusion
